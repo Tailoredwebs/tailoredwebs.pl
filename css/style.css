@@ -5,15 +5,15 @@
 @import url("./plugin/jquery.fs.tipper.css");
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900);
 
-/* 
+/*
 * BASIC STYLE
-  - General Style    
-  - Headings Style    
-  - Button Style    
-  - Form Style    
+  - General Style
+  - Headings Style
+  - Button Style
+  - Form Style
   - Spacer Style
-      
-* HEADER 
+
+* HEADER
   - Topbar
   - Header Navbar
   - Logo
@@ -22,7 +22,7 @@
   - Navigation Dropdown Menu
   - Header Icons
   - Search Menu Bar & Cart Menu Bar
- 
+
 * INTRO
   - intro
 
@@ -39,7 +39,7 @@
   - Client Logo
   - Icon
   - Table
-  
+
 * GLOBAL STYLES
   - Sidebar Menu
   - Search Overlay Menu
@@ -1266,7 +1266,6 @@ form label.error {
         .logo a img {
             position: absolute;
             max-height: 100%;
-            height: 100%;
             width: auto;
             transition: all .3s ease-out;
             -moz-transition: all .3s ease-out;
@@ -1279,7 +1278,7 @@ form label.error {
 }
 
 /*------------------------------------------------------------
-    Header Color Setting 
+    Header Color Setting
 ------------------------------------------------------------*/
 .header .nav-menu > ul > li > a,
 .header.fixed .nav-menu > ul > li > a,
@@ -1377,7 +1376,7 @@ form label.error {
     }
 }
 /*------------------------------------------------------------
-    Navigation Menu 
+    Navigation Menu
 ------------------------------------------------------------*/
 .nav-menu {
     position: static;
