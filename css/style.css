@@ -287,8 +287,25 @@ h1 {
 }
 
     h1.h1, h2.h2 {
+        
         letter-spacing: 15px;
+        font-size: 4rem;
+        line-height: 4rem;
+        
     }
+
+    .title-1st-word {
+        color: #D3D3D3;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 2fr 4fr 2fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: ". . ." ". grid-center-area ." ". . .";
+      }
+      
+    .grid-center-area { grid-area: grid-center-area; }
 
 @media (max-width: 767px) {
     h1.h1, h2.h2 {
@@ -1977,14 +1994,14 @@ form label.error {
 }
 
 .intro-content {
-    display: table;
+
     height: 100%;
-    text-align: center;
+   
     width: 100%;
 }
 
 .intro-content-inner {
-    display: table-cell;
+   
     height: 100%;
     vertical-align: middle;
 }
