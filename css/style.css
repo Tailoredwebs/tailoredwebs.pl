@@ -3,6 +3,7 @@
 @import url("./plugin/mediaelementplayer.css");
 @import url("./plugin/colorbox.css");
 @import url("./plugin/jquery.fs.tipper.css");
+@import url("technologiesSection.css");
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900);
 
 /*
@@ -486,6 +487,7 @@ button {
 .btn-black-line, .btn-white-line, .btn-color-line {
     border: 2px solid;
     background: none;
+    
 }
 
 .btn-black-line {
@@ -1439,6 +1441,10 @@ form label.error {
     padding-bottom: 24px;
 }
 
+.singlepage-nav{
+    text-align: center;
+}
+
 /*Onepage Nav*/
 .fixed a.current {
     color: #e6ae49 !important;
@@ -2009,7 +2015,7 @@ form label.error {
 }
 
 .intro-content-inner {
-   
+    margin: 0 auto;
     height: 100%;
     vertical-align: middle;
 }

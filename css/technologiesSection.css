@@ -1,0 +1,60 @@
+.section-services-technologies {
+    padding-top: 110px;
+    padding-bottom: 110px;
+}
+.section-pink {
+    background-color: #ed1c4f;
+    color: #fff;
+}
+
+.section, section {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.section-header {
+    margin-bottom: 3em;
+}
+
+.header-md, .header-md h2 {
+    font-size: 2.88888889em;
+    line-height: 1.21153846;
+}
+
+.header-md h2 + .subheader {
+    font-size: 22px;
+    line-height: 27px;
+    font-style: normal;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.container-fl-lg {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1600px;
+    overflow: hidden;
+}
+
+.sm-spaced-bottom {
+    margin-bottom: 2em;
+}
+
+ul {
+    padding-left: 0;
+    margin-top: 0;
+    list-style: none;
+}
+
+@media (min-width: 768px) {
+.container {
+    width: 750px;
+}
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+}
