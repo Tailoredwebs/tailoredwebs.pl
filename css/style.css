@@ -79,7 +79,8 @@ body {
     line-height: 24px;
     color: #323232;
     font-size: 13px;
-    font-family: 'Raleway', sans-serif;
+    /* font-family: 'Raleway', sans-serif; */
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
 }
@@ -93,6 +94,12 @@ img {
     -moz-transition: all 0.2s ease 0s;
     -webkit-transition: all 0.2s ease 0s;
     -o-transition: all 0.2s ease 0s;
+}
+
+.photo-shaddow {
+    -webkit-box-shadow: 0px 9px 12px 0px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    0px 9px 12px 0px rgba(50, 50, 50, 0.75);
+box-shadow:         0px 9px 12px 0px rgba(50, 50, 50, 0.75);
 }
 
 a, a:focus, a:active, a:link, img {
@@ -194,6 +201,7 @@ p {
         font-size: 16px;
         font-weight: 400;
         line-height: 24px;
+        text-align: justify;
     }
 
     p.dark, .dark, a.dark, h1.dark, h2.dark, h3.dark, h4.dark, h5.dark, h6.dark {
@@ -274,7 +282,7 @@ p {
 h1, h2, h3, h4, h5, h6 {
     color: #323232;
     text-transform: uppercase;
-    font-family: 'Raleway', sans-serif;
+    /* font-family: 'Raleway', sans-serif; */
     font-weight: 600;
     margin-top: 0px;
     margin-bottom: 10px;
@@ -370,7 +378,7 @@ h1.large {
     font-size: 12px;
     line-height: normal;
     font-weight: 600;
-    font-family: 'Raleway', sans-serif;
+    /* font-family: 'Raleway', sans-serif; */
     letter-spacing: 1px;
     text-align: center;
     text-transform: uppercase;
@@ -563,7 +571,7 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
 }
 
 button, input, textarea, select {
-    font-family: 'Raleway', sans-serif;
+    /* font-family: 'Raleway', sans-serif; */
     font-size: 12px;
 }
 
@@ -593,7 +601,7 @@ button, input, textarea, select {
 
 input, textarea, select {
     margin-bottom: 20px;
-    font-family: 'Raleway', sans-serif;
+    /* font-family: 'Raleway', sans-serif; */
     font-size: 12px;
 }
 
@@ -612,7 +620,7 @@ label {
     padding-right: 3px;
     margin-top: 6px;
     font-weight: 600;
-    font-family: 'Raleway', sans-serif;
+    /* font-family: 'Raleway', sans-serif; */
     display: block;
 }
 
@@ -3625,7 +3633,7 @@ form label.error {
             letter-spacing: 2px;
             font-size: 12px;
             font-weight: 600;
-            font-family: 'Raleway', sans-serif;
+            /* font-family: 'Raleway', sans-serif; */
         }
 
             .container-filter li a.active {
