@@ -204,6 +204,13 @@ p {
         text-align: justify;
     }
 
+    .lead .funFact {
+        display: block;
+        margin: 0;
+        padding: 0;
+        color: #888;
+    }
+
     p.dark, .dark, a.dark, h1.dark, h2.dark, h3.dark, h4.dark, h5.dark, h6.dark {
         color: #323232 !important;
     }
