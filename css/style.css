@@ -486,6 +486,7 @@ button {
 .btn-black-line, .btn-white-line, .btn-color-line {
     border: 2px solid;
     background: none;
+    
 }
 
 .btn-black-line {
@@ -1439,6 +1440,10 @@ form label.error {
     padding-bottom: 24px;
 }
 
+.singlepage-nav{
+    text-align: center;
+}
+
 /*Onepage Nav*/
 .fixed a.current {
     color: #e6ae49 !important;
@@ -2009,7 +2014,7 @@ form label.error {
 }
 
 .intro-content-inner {
-   
+    margin: 0 auto;
     height: 100%;
     vertical-align: middle;
 }
@@ -2613,8 +2618,8 @@ form label.error {
 /* Icon          ||---------------------------- */
 /*-------------------------------------------------------------------------------------------*/
 .page-icon-top {
-    font-size: 50px;
-    line-height: 50px;
+    font-size: 70px;
+    line-height: 70px;
     padding-bottom: 20px;
     width: 100%;
     color: #323232;
