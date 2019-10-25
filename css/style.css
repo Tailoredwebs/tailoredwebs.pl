@@ -302,11 +302,11 @@ h1 {
 }
 
     h1.h1, h2.h2 {
-        
+
         letter-spacing: 15px;
         font-size: 4rem;
         line-height: 4rem;
-        
+
     }
 
     .title-1st-word {
@@ -319,7 +319,7 @@ h1 {
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-areas: ". . ." ". grid-center-area ." ". . .";
       }
-      
+
     .grid-center-area { grid-area: grid-center-area; }
 
 @media (max-width: 767px) {
@@ -493,7 +493,7 @@ button {
 .btn-black-line, .btn-white-line, .btn-color-line {
     border: 2px solid;
     background: none;
-    
+
 }
 
 .btn-black-line {
@@ -2016,7 +2016,7 @@ form label.error {
 .intro-content {
 
     height: 100%;
-   
+
     width: 100%;
 }
 
@@ -3656,6 +3656,7 @@ form label.error {
     position: relative;
     overflow: hidden;
     display: block;
+    max-height: 220px;
 }
 
     .item-box a {
