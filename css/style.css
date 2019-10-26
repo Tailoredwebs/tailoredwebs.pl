@@ -4669,3 +4669,16 @@ ul.project-detail-block, .project-detail-block ul {
         visibility: hidden;
     }
 }
+
+/* Multi lang plugin */
+.wrapper [lang="en"] {
+  display: none;
+}
+
+img[src*="flags"] {
+  cursor: pointer;
+}
+
+img[src*="poland"] {
+  display: none;
+}
