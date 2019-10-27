@@ -119,9 +119,9 @@
               <h1 class="h1"><span class="title-1st-word">We</span> build</h1>
               <h1 class="h1"><span class="title-1st-word">You</span> grow</h1>
               <br>
-              <div lang="pl" class="nav-menu singlepage-nav"><a href="#contact-section" class="btn btn-md btn-white-line xs-hidden">Skontaktuj się z nami</a>
+              <div lang="pl" class="nav-menu singlepage-nav"><a href="#form-section" class="btn btn-md btn-white-line xs-hidden">Opowiedz o sobie</a>
               </div>
-              <div lang="en" class="nav-menu singlepage-nav"><a href="#contact-section" class="btn btn-md btn-white-line xs-hidden">Contact us</a>
+              <div lang="en" class="nav-menu singlepage-nav"><a href="#form-section" class="btn btn-md btn-white-line xs-hidden">Introduce yourself</a>
               </div>
             </div>
           </div>
@@ -162,6 +162,87 @@
       </div>
     </section>
     <!-- End About Section-->
+
+    <hr />
+
+    <!-- Form Section -->
+    <section id="form-section" class="ptb ptb-sm-80">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 offset-md-2 text-center">
+            <h3 lang="pl">Powedz czego potrzebujesz</h3>
+            <h3 lang="en">Tell us what you need</h3>
+          </div>
+        </div>
+        <div class="spacer-75"></div>
+        <div class="row">
+          <div class="col-md-6 offset-md-3">
+            <!-- Contact FORM -->
+            <form class="contact-form" id="contact" role="form">
+
+              <!-- IF MAIL SENT SUCCESSFULLY -->
+              <h6 class="successContent">
+                <i class="fa fa-check left" style="color: #5cb45d;"></i>Twoja wiadomość została wysłana pomyślnie.
+              </h6>
+              <!-- END IF MAIL SENT SUCCESSFULLY -->
+
+              <!-- MAIL SENDING UNSUCCESSFULL -->
+              <h6 class="errorContent">
+                <i class="fa fa-exclamation-circle left" style="color: #e1534f;"></i>Motyla noga, wystąpił błąd. Sprawdź wprowadzone dane.
+              </h6>
+              <!-- END MAIL SENDING UNSUCCESSFULL -->
+
+              <div class="form-field-wrapper">
+                <input class="input-sm form-full" id="form-name" type="text" name="form-name" placeholder="Imię" required>
+              </div>
+
+              <div class="form-field-wrapper">
+                <input class="input-sm form-full" id="form-email" type="email" name="form-email" placeholder="Email" required>
+              </div>
+
+              <div class="form-field-wrapper">
+                <input class="input-sm form-full" id="form-phone" type="number" name="form-subject" placeholder="Telefon" required>
+              </div>
+
+              <div class="form-field-wrapper">
+                <input class="input-sm form-full" id="form-services" type="text" name="form-services" placeholder="Oferowane usługi/produkty">
+              </div>
+
+              <div class="form-field-wrapper">
+                <textarea class="form-full" id="form-logo" rows="7" name="form-logo" placeholder="Informacje o kolorystyce, logo itp." required></textarea>
+              </div>
+
+              <div class="form-field-wrapper">
+                <input class="input-sm form-full" id="form-lang" type="text" name="form-lang" placeholder="Wersje językowe" required>
+              </div>
+
+              <div class="form-field-wrapper">
+                <textarea class="form-full" id="form-links" rows="7" name="form-links" placeholder="Linki do projektów, które mogą być dla nas wzorem"></textarea>
+              </div>
+
+              <div class="form-field-wrapper">
+                <select class="custom-select" id="form-time" name="form-time">
+                  <option disabled selected>Oczekiwany termin realizacji</option>
+                  <option value="1">2 tygodnie</option>
+                  <option value="2">1 miesiąc</option>
+                  <option value="3">3 miesiące</option>
+                  <option value="3">6 miesiący</option>
+                  <option value="3">1 rok</option>
+                </select>
+              </div>
+
+              <div class="form-field-wrapper">
+                <textarea class="form-full" id="form-message" rows="7" name="form-message" placeholder="Dodatkowe informacje" required></textarea>
+              </div>
+
+              <button class="btn btn-md btn-black form-full" type="submit" id="form-submit" name="submit">Wyślij wiadomość</buttob>
+            </form>
+            <!-- END Contact FORM -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Form Section -->
 
     <hr />
 
