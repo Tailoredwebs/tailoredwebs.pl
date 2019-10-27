@@ -1,3 +1,5 @@
+=======
+﻿
 <!DOCTYPE html>
 <html>
 
@@ -20,12 +22,13 @@
 
   <!-- CSS -->
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
   <link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
   <link href="css/ionicons.css" rel="stylesheet" type="text/css" />
   <link href="css/plugin/animate.css" rel="stylesheet" type="text/css" />
   <link href="css/jquery-ui.css" rel="stylesheet" type="text/css" />
   <link href="css/plugin/YTPlayer.css" rel="stylesheet" type="text/css" />
-  <link href="css/style.css" rel="stylesheet" type="text/css" />
+
 </head>
 
 <body>
@@ -62,27 +65,17 @@
                   <a href="#intro">Home</a>
                 </li>
                 <li class="nav-menu-item">
-                  <a lang="pl" href="#about">O nas</a>
-                  <a lang="en" href="#about">About</a>
+                  <a href="#about">O nas</a>
                 </li>
                 <li class="nav-menu-item">
-                  <a lang="pl" href="#work">Projekty</a>
-                  <a lang="en" href="#work">Projects</a>
+                  <a href="#work">Projekty</a>
                 </li>
                 <li class="nav-menu-item">
-                  <a lang="pl" href="#service">Technologie</a>
-                  <a lang="en" href="#service">Technologies</a>
+                  <a href="#service">Technologie</a>
                 </li>
                 <li class="nav-menu-item">
-                  <a lang="pl" href="#contact-section">Kontakt</a>
-                  <a lang="en" href="#contact-section">Contact</a>
+                  <a href="#contact-section">Kontakt</a>
                 </li>
-                <!-- Buttons lang -->
-                <li>
-                  <img onclick="$('[lang]').languageSwitcher('pl')" src="img/flags/poland-flag-icon-32.png" />
-                  <img onclick="$('[lang]').languageSwitcher('en')" src="img/flags/united-kingdom-flag-icon-32.png" />
-                </li>
-                <!-- End buttons lang -->
               </ul>
             </div>
             <div class="nav-icons">
@@ -119,9 +112,7 @@
               <h1 class="h1"><span class="title-1st-word">We</span> build</h1>
               <h1 class="h1"><span class="title-1st-word">You</span> grow</h1>
               <br>
-              <div lang="pl" class="nav-menu singlepage-nav"><a href="#contact-section" class="btn btn-md btn-white-line xs-hidden">Skontaktuj się z nami</a>
-              </div>
-              <div lang="en" class="nav-menu singlepage-nav"><a href="#contact-section" class="btn btn-md btn-white-line xs-hidden">Contact us</a>
+              <div class="nav-menu singlepage-nav"><a href="#contact-section" class="btn btn-md btn-white-line xs-hidden">Skontaktuj się z nami</a>
               </div>
             </div>
           </div>
@@ -134,30 +125,29 @@
       <div class="container">
         <div class="row text-center">
           <div class="col-md-8 offset-md-2">
-            <h3 lang="pl" class="h4">O nas</h3>
-            <h3 lang="en" class="h4">About us</h3>
+            <h3 class="h4">O nas</h3>
             <div class="spacer-15"></div>
             <p class="lead">Jesteśmy zespołem pasjonatów tworzących nowoczesne, funkcjonalne i responsywne <b>strony internetowe.</b>
               Jeśli chcesz być widoczny w sieci, zaprezentować swoją firmę klientom, pozwolić aby łatwo i szybko się z Tobą skontaktowali – napisz lub zadzwoń <b>do nas.</b></p>
           </div>
         </div>
-        <div class="avatars row">
-          <div class="pawel col-md-6 mt-60 justify-content-center align-content-center">
-            <h5 class="h2">Paweł</h5>
-            <div class="spacer-15"></div>
-            <div class="img">
-              <img src="img/man.png" alt="Paweł">
-            </div>
-            <p class="lead mt-60">Kobieciarz, żadnej nie przepuści. Lubi drogie alkohole, nie wylewa za kołnierz.</p>
+      </div>
+      <div class="container avatars">
+        <div class="pawel col-md-5 mt-60 justify-content-center align-content-center">
+          <h5 class="h2">Paweł</h5>
+          <div class="spacer-15"></div>
+          <div class="img">
+            <img src="img/man.png" alt="Paweł">
           </div>
-          <div class="patryk col-md-6 mt-60 justify-content-center align-content-center">
-            <h5 class="h2">Patryk</h5>
-            <div class="spacer-15"></div>
-            <div class="img">
-              <img src="img/boy.png" alt="Patryk">
-            </div>
-            <p class="lead mt-60">Alkoholik, mówi, że urodził się z kieliszkiem w ręku. Nie lubi sportu i brzydkich kobiet.</p>
+          <p class="lead mt-60">Kobieciarz, żadnej nie przepuści. Lubi drogie alkohole, nie wylewa za kołnierz.</p>
+        </div>
+        <div class="patryk col-md-5 mt-60 justify-content-center align-content-center">
+          <h5 class="h2">Patryk</h5>
+          <div class="spacer-15"></div>
+          <div class="img">
+            <img src="img/boy.png" alt="Patryk">
           </div>
+          <p class="lead mt-60">Alkoholik, mówi, że urodził się z kieliszkiem w ręku. Nie lubi sportu i brzydkich kobiet.</p>
         </div>
       </div>
     </section>
@@ -223,8 +213,7 @@
     <!-- Work Section -->
     <section id="work" class="wow fadeInUp ptb ptb-sm-80 text-center">
       <div class="container">
-        <h3 lang="pl">Projekty</h3>
-        <h3 lang="en">Projects</h3>
+        <h3>Projekty</h3>
         <div class="spacer-60"></div>
       </div>
       <!-- Work Gallary -->
@@ -367,8 +356,7 @@
     <!-- Service Section -->
     <section id="service" class="ptb ptb-sm-80">
       <div class="wow fadeInLeft container text-center">
-        <h3 lang="pl">Technologie</h3>
-        <h3 lang="en">Technologies</h3>
+        <h3>Technologie</h3>
         <div class="spacer-60"></div>
         <div class="row">
           <div class="col-md-4 col-sm-6 mb-45">
@@ -800,8 +788,7 @@
       <div class="container text-center">
         <div class="row">
           <div class="col-md-8 offset-md-2">
-            <h3 lang="pl">Obserwuj nas w mediach społecznościowych</h3>
-            <h3 lang="en">Follow us in social media</h3>
+            <h3>Obserwuj nas w mediach społecznościowych</h3>
           </div>
         </div>
         <div class="spacer-60"></div>
@@ -838,8 +825,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-8 offset-md-2 text-center">
-            <h3 lang="pl">Skontaktuj się z nami</h3>
-            <h3 lang="en">Get in touch</h3>
+            <h3>Skontaktuj się z nami</h3>
           </div>
         </div>
         <div class="spacer-75"></div>
@@ -893,22 +879,18 @@
           <div class="col-md-4">
             <div class="contact-box-left">
               <div class="contact-icon-left"><i class="ion ion-ios-location"></i></div>
-              <h6 lang="pl">Adres</h6>
-              <h6 lang="en">Address</h6>
-              <p lang="pl">
-                TailoredWebs, Poznań, Polska.
-              </p>
-              <p lang="en">
+              <h6>Adres</h6>
+              <p>
                 TailoredWebs, Poznań, Poland.
               </p>
+
             </div>
           </div>
 
           <div class="col-md-4">
             <div class="contact-box-left">
               <div class="contact-icon-left"><i class="ion ion-ios-telephone"></i></div>
-              <h6 lang="pl">Zadzwoń do nas</h6>
-              <h6 lang="en">Call us</h6>
+              <h6>Zadzwoń do nas</h6>
               <p>
                 <span><a href="tel:+48668336781">+48 668 336 781</a></span><br />
                 <span><a href="tel:+48507008812">+48 507 008 812</a></span><br />
@@ -992,8 +974,6 @@
   <script src="js/plugin/EasePack.min.js" type="text/javascript"></script>
   <script src="js/plugin/pollyfill.js" type="text/javascript"></script>
   <script src="https://kit.fontawesome.com/47bc2738a4.js" crossorigin="anonymous"></script>
-  <script src="js/plugin/jquery-simple-multi-lang.js" type="text/javascript"></script>
-  js/plugin/jquery-simple-multi-lang.js
 
 
   <script type="text/javascript">
