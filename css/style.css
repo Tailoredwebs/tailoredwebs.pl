@@ -4677,6 +4677,19 @@ ul.project-detail-block, .project-detail-block ul {
     }
 }
 
+/* Multi lang plugin */
+.wrapper [lang="en"] {
+  display: none;
+}
+
+img[src*="flags"] {
+  cursor: pointer;
+}
+
+img[src*="poland"] {
+  display: none;
+}
+=======
 
 .avatars {
     display: flex;
