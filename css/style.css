@@ -586,7 +586,7 @@ button, input, textarea, select {
     input[type="text"], input[type="search"], input[type="email"], input[type="tel"], input[type="number"], input[type="password"], input[type="radio"], input[type="checkbox"], textarea, select {
         appearance: none;
         -webkit-appearance: none;
-        border: 1px solid #e0e0e0;
+        
         -webkit-border-radius: 0px;
         border-radius: 0px;
         color: #888;
@@ -594,11 +594,7 @@ button, input, textarea, select {
         font-weight: 400;
         letter-spacing: 1px;
         font-size: 13px;
-        padding: 10px 15px;
-        transition: all 0.2s ease 0s;
-        -moz-transition: all 0.2s ease 0s;
-        -webkit-transition: all 0.2s ease 0s;
-        -o-transition: all 0.2s ease 0s;
+      
         display: inline-block;
     }
 
@@ -4739,7 +4735,7 @@ textarea {
 }
 
 #container {
-  border: solid 3px #474544;
+  
   max-width: 768px;
   margin: 60px auto;
   position: relative;
@@ -4757,6 +4753,10 @@ h1 {
   letter-spacing: 7px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.form--subtitle{
+    text-align: center;
 }
 
 .underline {
@@ -4793,18 +4793,18 @@ input[type='text'], [type='email'], select, textarea {
   letter-spacing: 1px;
 	margin: 0em 0 1.875em 0;
 	padding: 0 0 0.875em 0;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 	width: 100%;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-ms-box-sizing: border-box;
 	-o-box-sizing: border-box;
 	box-sizing: border-box;
-	-webkit-transition: all 0.3s;
+	/* -webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	-ms-transition: all 0.3s;
 	-o-transition: all 0.3s;
-	transition: all 0.3s;
+	transition: all 0.3s; */
 }
 
 input[type='text']:focus, [type='email']:focus, textarea:focus {
@@ -4816,8 +4816,7 @@ input[type='text']:focus, [type='email']:focus, textarea:focus {
 	float: none;
 }
 
-.name {
-	float: left;
+.name, .email, .company--name, .company--website, .company--phone, .service--time--limit {
 	width: 45%;
 }
 
@@ -4841,10 +4840,9 @@ select::-ms-expand {
 }
 
 textarea {
-	line-height: 150%;
-	height: 150px;
-	resize: none;
-  width: 100%;
+    height: 90px;
+    resize: none;
+    width: 100%;
 }
 
 ::-webkit-input-placeholder {
@@ -4876,12 +4874,12 @@ textarea {
   font-weight: bold;
   outline: none;
   padding: 20px 35px;
-  text-transform: uppercase;
+  /* text-transform: uppercase;
   -webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	-ms-transition: all 0.3s;
 	-o-transition: all 0.3s;
-	transition: all 0.3s;
+	transition: all 0.3s; */
 }
 
 #form_button:hover {
@@ -4894,6 +4892,10 @@ textarea {
     margin: 20px auto;
     width: 95%;
   }
+
+  .name, .email, .company--name, .company--website, .company--phone, .service--time--limit {
+	width: 100%;
+}
 }
 
 @media screen and (max-width: 480px) {
