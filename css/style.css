@@ -212,7 +212,7 @@ p {
         text-align: justify;
     }
 
-  
+
 
     p.dark, .dark, a.dark, h1.dark, h2.dark, h3.dark, h4.dark, h5.dark, h6.dark {
         color: #323232 !important;
@@ -589,7 +589,7 @@ button, input, textarea, select {
     input[type="text"], input[type="search"], input[type="email"], input[type="tel"], input[type="number"], input[type="password"], input[type="radio"], input[type="checkbox"], textarea, select {
         appearance: none;
         -webkit-appearance: none;
-        
+
         -webkit-border-radius: 0px;
         border-radius: 0px;
         color: #888;
@@ -597,7 +597,7 @@ button, input, textarea, select {
         font-weight: 400;
         letter-spacing: 1px;
         font-size: 13px;
-      
+
         display: inline-block;
     }
 
@@ -4420,6 +4420,10 @@ ul.project-detail-block, .project-detail-block ul {
 }
 
 /* Multi lang plugin */
+[lang="en"] {
+  display: none;
+}
+
 .wrapper [lang="en"] {
   display: none;
 }
@@ -4479,7 +4483,7 @@ textarea {
 }
 
 #container {
-  
+
   max-width: 768px;
   margin: 60px auto;
   position: relative;
@@ -4593,7 +4597,7 @@ textarea {
 	color: #474544;
 }
 
-:-moz-placeholder { 
+:-moz-placeholder {
 	color: #474544;
 	opacity: 1;
 }
@@ -4646,11 +4650,11 @@ textarea {
   h1 {
     font-size: 26px;
   }
-  
+
   .underline {
     width: 68px;
   }
-  
+
   #form_button {
     padding: 15px 25px;
   }
@@ -4660,16 +4664,16 @@ textarea {
   h1 {
     font-size: 18px;
   }
-  
+
   .icon {
     height: 35px;
     width: 35px;
   }
-  
+
   .underline {
     width: 53px;
   }
-  
+
   input[type='text'], [type='email'], select, textarea {
     font-size: 0.875em;
   }
