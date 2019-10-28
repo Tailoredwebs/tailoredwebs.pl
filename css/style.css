@@ -66,6 +66,14 @@
     color: #FFF;
 }
 
+.font--color--light{
+    color: #f2f2f2;
+}
+
+.font--color--dark--grey{
+    color: #474544;
+}
+
 
 /*  General Style   ||-----------*/
 
@@ -204,12 +212,7 @@ p {
         text-align: justify;
     }
 
-    .lead .funFact {
-        display: block;
-        margin: 0;
-        padding: 0;
-        color: #888;
-    }
+  
 
     p.dark, .dark, a.dark, h1.dark, h2.dark, h3.dark, h4.dark, h5.dark, h6.dark {
         color: #323232 !important;
@@ -586,7 +589,7 @@ button, input, textarea, select {
     input[type="text"], input[type="search"], input[type="email"], input[type="tel"], input[type="number"], input[type="password"], input[type="radio"], input[type="checkbox"], textarea, select {
         appearance: none;
         -webkit-appearance: none;
-        border: 1px solid #e0e0e0;
+        
         -webkit-border-radius: 0px;
         border-radius: 0px;
         color: #888;
@@ -594,11 +597,7 @@ button, input, textarea, select {
         font-weight: 400;
         letter-spacing: 1px;
         font-size: 13px;
-        padding: 10px 15px;
-        transition: all 0.2s ease 0s;
-        -moz-transition: all 0.2s ease 0s;
-        -webkit-transition: all 0.2s ease 0s;
-        -o-transition: all 0.2s ease 0s;
+      
         display: inline-block;
     }
 
@@ -2472,6 +2471,15 @@ form label.error {
     right: 0;
 }
 
+
+/* FORM BRIEF Start */
+#contact-section {
+    background: #F2F3EB;
+}
+/* FORM BRIEF End */
+
+
+
 .contact-box-left, .contact-box-top {
     display: block;
     position: relative;
@@ -2523,66 +2531,6 @@ form label.error {
         right: auto;
     }
 }
-/*-------------------------------------------------------------------------------------------*/
-/*  Pricing       ||---------------------------- */
-/*-------------------------------------------------------------------------------------------*/
-
-.Pricing-box {
-    border: 1px solid #f1f1f1;
-    text-align: center;
-}
-
-    .Pricing-box.highlight {
-        background: #f9f9f9;
-        border: 1px solid #ddd;
-    }
-
-        .Pricing-box.highlight hr {
-            border-color: #ddd;
-        }
-
-.price-title h4, .price-title h5 {
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-
-.Pricing-box .price {
-    font-size: 50px;
-    font-weight: 700;
-    position: relative;
-}
-
-    .Pricing-box .price .price-sm {
-        font-size: 14px;
-        position: absolute;
-    }
-
-    .Pricing-box .price .price-lg {
-        padding-left: 10px;
-    }
-
-.Pricing-box .price-tenure {
-    font-size: 12px;
-    color: #888;
-    font-weight: 400;
-    padding-top: 8px;
-}
-
-.Pricing-box .pricing-features {
-    font-size: 13px;
-    text-transform: uppercase;
-}
-
-    .Pricing-box .pricing-features ul {
-        list-style: none;
-        padding: 0px;
-        margin: 0px;
-    }
-
-        .Pricing-box .pricing-features ul li {
-            padding: 6px;
-        }
-
 
 /*-------------------------------------------------------------------------------------------*/
 /*  Testimonials     ||---------------------------- */
@@ -3854,213 +3802,7 @@ ul.project-detail-block, .project-detail-block ul {
             padding-top: 8px;
         }
 
-/* ----------------------------------------------------------------------*/
-/* Blog   --------------------------------------------------------- */
-/* ----------------------------------------------------------------------*/
-/*.blog-post {
-    position: relative;
-}*/
-.blog-post {
-    display: inline-block;
-    width: 100%;
-}
 
-    .blog-post .post-media {
-        position: relative;
-        overflow: hidden;
-        margin-bottom: 25px;
-    }
-
-        .blog-post .post-media iframe {
-            width: 100%;
-        }
-
-    .blog-post .post-meta, .comment-list .post-meta, .sidebar-widget .post-meta {
-        text-transform: uppercase;
-        color: #999;
-        font-size: 13px;
-    }
-
-        .blog-post .post-meta span, .comment-list .post-meta span {
-            margin-right: 3px;
-        }
-
-    .blog-post .post-header h5, .blog-post .post-header h4, .blog-post .post-header h3 {
-        margin-top: 5px;
-        margin-bottom: 20px;
-    }
-
-    .blog-post .post-header h2 {
-        margin-bottom: 30px;
-    }
-
-    .blog-post .post-entry {
-        margin-bottom: 30px;
-    }
-
-        .blog-post .post-entry p, .blog-post .post-entry blockquote, .post-entry ul {
-            margin-bottom: 20px;
-        }
-
-        .blog-post .post-entry ul {
-            color: #888;
-        }
-
-    .blog-post .post-tag {
-        color: #999;
-        text-transform: uppercase;
-        font-size: 13px;
-    }
-
-        .blog-post .post-tag span {
-            margin-right: 10px;
-        }
-
-    .blog-post .post-more-link {
-        font-size: 11px;
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-    }
-
-        .blog-post .post-more-link a i {
-            margin-left: 5px;
-            transition: all 0.25s ease 0s;
-            -o-transition: all 0.25s ease 0s;
-            -moz-transition: all 0.25s ease 0s;
-            -webkit-transition: all 0.25s ease 0s;
-        }
-
-        .blog-post .post-more-link a:hover i {
-            margin-left: 10px;
-        }
-
-    .blog-post blockquote {
-        border-left: none;
-        background: #f7f7f7;
-        font-size: 17px;
-        font-weight: 400;
-        padding: 25px 25px;
-        margin: 0px;
-        color: #888;
-        font-weight: 300;
-    }
-
-        .blog-post blockquote:after {
-            content: "";
-            font-family: FontAwesome;
-            padding-left: 7px;
-            font-size: 12px;
-        }
-
-        .blog-post blockquote:before {
-            content: "";
-            font-family: FontAwesome;
-            padding-right: 7px;
-            font-size: 12px;
-        }
-
-.blog-post-hr hr {
-    margin-bottom: 45px;
-}
-
-.post-author {
-    display: inline-block;
-    position: relative;
-    margin-bottom: 40px;
-}
-
-    .post-author img {
-        width: 80px;
-    }
-
-    .post-author .post-author-details {
-        margin-left: 20px;
-    }
-
-    .post-author h6 {
-        margin-top: 0px;
-    }
-
-    .post-author ul.social {
-        margin: 0px;
-        padding: 0px;
-        font-size: 16px;
-    }
-
-        .post-author ul.social li {
-            list-style: none;
-            display: inline-block;
-            margin: 0 5px;
-        }
-
-.post-comment {
-}
-
-    .post-comment .comment-numb {
-        font-weight: 300;
-    }
-
-    .post-comment .comment-list {
-        margin-left: 0px;
-        padding-right: 0px;
-        list-style: none;
-        padding: 0px;
-    }
-
-        .post-comment .comment-list h6 {
-            margin-top: 0px;
-            margin-bottom: 3px;
-        }
-
-        .post-comment .comment-list li:first-child {
-            padding-top: 0px;
-        }
-
-        .post-comment .comment-list li {
-            padding-top: 15px;
-        }
-
-            .post-comment .comment-list li:last-child .comment-detail {
-                border-bottom: 0px none;
-            }
-
-        .post-comment .comment-list li, .post-comment .comment-list .comment-reply {
-            position: relative;
-            padding-left: 65px;
-        }
-
-        .post-comment .comment-list .comment-detail {
-            border-bottom: 1px dotted #eee;
-            padding-bottom: 15px;
-        }
-
-        .post-comment .comment-list .comment-reply {
-            padding-top: 20px;
-        }
-
-        .post-comment .comment-list .comment-reply-btn i {
-            padding-right: 3px;
-        }
-
-    .post-comment .comment-avatar {
-        left: 0;
-        margin-right: 15px;
-        position: absolute;
-        width: 50px;
-    }
-
-        .post-comment .comment-avatar img {
-            width: 100%;
-        }
-
-.post-comment-star .star-rat {
-    display: inline-block;
-}
-
-.post-comment-star label {
-    margin-right: 6px;
-}
 /* ----------------------------------------------------------------------*/
 /* Shop   --------------------------------------------------------- */
 /* ----------------------------------------------------------------------*/
@@ -4689,7 +4431,7 @@ img[src*="flags"] {
 img[src*="poland"] {
   display: none;
 }
-=======
+
 
 .avatars {
     display: flex;
@@ -4702,3 +4444,259 @@ img[src*="poland"] {
     flex-direction: column;
     align-items: center;
 }
+
+/* Form CSS */
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+html {
+  font-family: 'Montserrat', Arial, sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+
+
+button {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, input, select, textarea {
+  color: #5A5A5A;
+  font: inherit;
+  margin: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+textarea {
+  overflow: auto;
+}
+
+#container {
+  
+  max-width: 768px;
+  margin: 60px auto;
+  position: relative;
+}
+
+form {
+  padding: 37.5px;
+  margin: 50px 0;
+}
+
+h1 {
+  color: #474544;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 7px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.form--subtitle{
+    text-align: center;
+}
+
+.underline {
+  border-bottom: solid 2px #474544;
+  margin: -0.512em auto;
+  width: 80px;
+}
+
+.icon_wrapper {
+  margin: 50px auto 0;
+  width: 100%;
+}
+
+.icon {
+  display: block;
+  fill: #474544;
+  height: 50px;
+  margin: 0 auto;
+  width: 50px;
+}
+
+.email {
+	float: right;
+	width: 45%;
+}
+
+input[type='text'], [type='email'], select, textarea {
+	background: none;
+  border: none;
+	border-bottom: solid 2px #474544;
+	color: #474544;
+	font-size: 1.000em;
+  font-weight: 400;
+  letter-spacing: 1px;
+	margin: 0em 0 1.875em 0;
+	padding: 0 0 0.875em 0;
+  /* text-transform: uppercase; */
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	/* -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s; */
+}
+
+input[type='text']:focus, [type='email']:focus, textarea:focus {
+	outline: none;
+	padding: 0 0 0.875em 0;
+}
+
+.message {
+	float: none;
+}
+
+.name, .email, .company--name, .company--website, .company--phone, .service--time--limit {
+	width: 45%;
+}
+
+select {
+  background: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png') no-repeat right;
+  outline: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.subject {
+  width: 100%;
+}
+
+.telephone {
+  width: 100%;
+}
+
+textarea {
+    height: 90px;
+    resize: none;
+    width: 100%;
+}
+
+::-webkit-input-placeholder {
+	color: #474544;
+}
+
+:-moz-placeholder { 
+	color: #474544;
+	opacity: 1;
+}
+
+::-moz-placeholder {
+	color: #474544;
+	opacity: 1;
+}
+
+:-ms-input-placeholder {
+	color: #474544;
+}
+
+#form_button {
+  background: none;
+  border: solid 2px #474544;
+  color: #474544;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Helvetica', Arial, sans-serif;
+  font-size: 0.875em;
+  font-weight: bold;
+  outline: none;
+  padding: 20px 35px;
+  /* text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s; */
+}
+
+#form_button:hover {
+  background: #474544;
+  color: #F2F3EB;
+}
+
+@media screen and (max-width: 768px) {
+  #container {
+    margin: 20px auto;
+    width: 95%;
+  }
+
+  .name, .email, .company--name, .company--website, .company--phone, .service--time--limit {
+	width: 100%;
+}
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 26px;
+  }
+  
+  .underline {
+    width: 68px;
+  }
+  
+  #form_button {
+    padding: 15px 25px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  h1 {
+    font-size: 18px;
+  }
+  
+  .icon {
+    height: 35px;
+    width: 35px;
+  }
+  
+  .underline {
+    width: 53px;
+  }
+  
+  input[type='text'], [type='email'], select, textarea {
+    font-size: 0.875em;
+  }
+}
+
+
+/* ABOUT US Start */
+#about{
+    background-color: #222;
+}
+
+.desc h3::after{
+    font-size: inherit;
+}
+/* ABOUT US End */
+
+
+
+/* ACTION-BOXUS Start */
+#action-box{
+    background-color: #fff;
+}
+/* ACTION-BOX End */
+
+
+/* WORK start */
+#work{
+    background-color: #222;
+}
+/* WORK end */
