@@ -4491,7 +4491,6 @@ textarea {
 
 form {
   padding: 37.5px;
-  margin: 50px 0;
 }
 
 h1 {
@@ -4505,6 +4504,7 @@ h1 {
 
 .form--subtitle{
     text-align: center;
+    color: #474544;
 }
 
 .underline {
@@ -4701,6 +4701,36 @@ textarea {
 
 /* WORK start */
 #work{
-    background-color: #222;
+   
 }
 /* WORK end */
+
+/* OFFER start */
+#offer{
+    background-color: #222;
+}
+
+.offer--list{
+   
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.offer--list li{
+    width: 50%;
+    padding: 10px 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.active .far{
+    line-height: inherit;
+    padding-right: 20px;
+}
+/* OFFER end */
