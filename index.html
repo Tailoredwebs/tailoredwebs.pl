@@ -141,38 +141,53 @@
                           <path d="M70.865,101.78c0,4.774,3.886,8.657,8.66,8.657c4.774,0,8.657-3.883,8.657-8.657c0-4.773-3.883-8.656-8.657-8.656    C74.751,93.124,70.865,97.006,70.865,101.78z"></path>
                         </svg>
                       </div>
-                      <form action="#" method="post" id="contact_form">
+                      <form id="contact" role="form">
+                        <div lang="en" class="col-md-12 text-center">
+                                    <h5 class="successContent">
+                                        <i class="fa fa-check left" style="color: #5cb45d;"></i>Your message has been sent successfully.
+                                    </h5>
+                                    <h5 class="errorContent" style="color: #e1534f;">
+                                        <i class="fa fa-exclamation-circle left"></i>There was a problem validating the form please check!
+                                    </h5>
+                                </div>
+                        <div lang="pl" class="col-md-12 text-center">
+                                    <h5 class="successContent">
+                                        <i class="fa fa-check left" style="color: #5cb45d;"></i>Twoja wiadomość została wysłana. Odpowiemy najszybciej jak to będzie możliwe.
+                                    </h5>
+                                    <h5 class="errorContent" style="color: #e1534f;">
+                                        <i class="fa fa-exclamation-circle left"></i>Wystąpił błąd z wysłaniem wiadomości. Sprawdź wprowadzone dane.
+                                    </h5>
+                                </div>
                         <div class="name pull-left">
                           <label for="name"></label>
-                          <input type="text" placeholder="Twoje imię" name="name" id="name_input" required>
+                          <input id="form-name" type="text" name="form-name" placeholder="Twoje imię" required>
                         </div>
                         <div class="email pull-right">
                           <label for="email"></label>
-                          <input type="email" placeholder="Twój mail" name="email" id="email_input" required>
+                          <input id="form-email" type="email" name="form-email" placeholder="Twój email"  required>
                         </div>
                         <div class="company--name pull-left">
                           <label for="name"></label>
-                          <input type="text" placeholder="Nazwa Twojej firmy" name="name" id="name_input" required>
+                          <input id="form-subject" type="text" name="form-subject" placeholder="Nazwa Twojej firmy" required>
                         </div>
                         <div class="company--website pull-right">
                           <label for="name"></label>
-                          <input type="text" placeholder="Link do Twojej strony" name="name" id="name_input" required>
+                          <input type="text" placeholder="Link do Twojej strony" name="name" id="form-link" >
                         </div>
                         <div class="company--phone pull-left">
-                          <label for="name"></label>
-                          <input type="text" placeholder="Numer telefonu - Oddzwonimy" name="telephone" id="telephone_input" required>
+                          <label for="number"></label>
+                          <input type="text" placeholder="Numer telefonu - Oddzwonimy" name="telephone" id="form-telephone" required>
                         </div>
                         <div class="service--time--limit pull-right">
-                          <label for="name"></label>
-                          <input type="text" placeholder="Termin realizacji" name="telephone" id="telephone_input" required>
+                          <label for="time"></label>
+                          <input type="text" placeholder="Termin realizacji" name="time" id="form-time" required>
                         </div>
                         <div class="message">
                           <label for="message"></label>
-                          <textarea name="textarea" placeholder="Czy masz jakieś dodatkowe wskazówki (np. linki do stron konkurencji, preferowana kolorystyka itd.)" id="message_input" cols="30" rows="5" required></textarea>
+                          <textarea id="form-message" name="form-message" placeholder="Czy masz jakieś dodatkowe wskazówki (np. linki do stron konkurencji, preferowana kolorystyka itd.)" cols="30" rows="5" required></textarea>
                         </div>
-                        <div class="submit singlepage-nav">
-                          <input type="submit" value="Wyślij wiadomość" class="btn" id="form_button" />
-                        </div>
+                          <button lang="pl" class="btn btn-outline-dark" type="submit" id="form-submit" name="submit">Wyślij wiadomość</button>
+                          <button lang="en" class="btn btn-outline-dark" type="submit" id="form-submit" name="submit">Send message</button>
                       </form><!-- // End form -->
                     </div><!-- // End #container -->
 
