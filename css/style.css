@@ -596,8 +596,6 @@ button, input, textarea, select {
         outline: none;
         font-weight: 400;
         letter-spacing: 1px;
-        font-size: 13px;
-
         display: inline-block;
     }
 
@@ -4489,9 +4487,11 @@ textarea {
   position: relative;
 }
 
-form {
+/* form {
   padding: 37.5px;
-}
+} */
+
+
 
 h1 {
   color: #474544;
@@ -4644,6 +4644,8 @@ textarea {
   .name, .email, .company--name, .company--website, .company--phone, .service--time--limit {
 	width: 100%;
 }
+
+
 }
 
 @media screen and (max-width: 480px) {
@@ -4679,7 +4681,9 @@ textarea {
   }
 }
 
-
+.no--after h3::after{
+    content: none;
+}
 /* ABOUT US Start */
 #about{
     background-color: #222;
@@ -4700,9 +4704,7 @@ textarea {
 
 
 /* WORK start */
-#work{
-   
-}
+
 /* WORK end */
 
 /* OFFER start */
@@ -4728,6 +4730,16 @@ textarea {
     display: -ms-flexbox;
     display: flex;
 }
+.offer--list li span {
+   text-align: left;
+}
+
+
+@media screen and (max-width: 768px) {
+    .offer--list li{
+        width: 100%;
+    }
+  }
 
 .active .far{
     line-height: inherit;
