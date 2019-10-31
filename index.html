@@ -100,7 +100,7 @@
     <section id="intro" class="dark-bg">
 
       <!-- Intro Canvas Pattern -->
-      <div class="intro-media-wraper bg-image overlay-dark parallax parallax-section1" data-background-img="img/laptop.jpg">
+      <div class="intro-media-wraper bg-image overlay-dark parallax parallax-section1">
         <!-- Canvas Pattern -->
         <canvas id="pollyfill-canvas"></canvas>
         <!-- End Canvas Pattern -->
@@ -112,8 +112,8 @@
         <div class="js-fullscreen-height intro-caption-top container">
           <div class="intro-content grid-container">
             <div class="intro-content-inner grid-center-area">
-              <h1 class="h1"><span class="title-1st-word">Dzień</span> dobry!</h1>
-              <h1 class="h1">Stworzymy<span class="title-1st-word"> dla Ciebie </span>stronę</h1>
+              <!-- <h1 class="h1"><span class="title-1st-word">Dzień</span> dobry!</h1>
+              <h1 class="h1">Stworzymy<span class="title-1st-word"> dla Ciebie </span>stronę</h1> -->
               <!-- <h1 class="h1"><span class="title-1st-word">You</span> grow</h1> -->
               <br>
               <div lang="pl" class="nav-menu singlepage-nav"><a href="#form-section" class="btn btn-md btn-white-line xs-hidden">Opowiedz o sobie</a>
@@ -141,7 +141,7 @@
                           <path d="M70.865,101.78c0,4.774,3.886,8.657,8.66,8.657c4.774,0,8.657-3.883,8.657-8.657c0-4.773-3.883-8.656-8.657-8.656    C74.751,93.124,70.865,97.006,70.865,101.78z"></path>
                         </svg>
                       </div>
-                      <form action="#" method="post" id="contact_form">
+                      <form action="send-mail.php" method="post" id="contact_form">
                         <div class="name pull-left">
                           <label for="name"></label>
                           <input type="text" placeholder="Twoje imię" name="name" id="name_input" required>
@@ -151,19 +151,19 @@
                           <input type="email" placeholder="Twój mail" name="email" id="email_input" required>
                         </div>
                         <div class="company--name pull-left">
-                          <label for="name"></label>
+                          <label for="company"></label>
                           <input type="text" placeholder="Nazwa Twojej firmy" name="name" id="name_input" required>
                         </div>
                         <div class="company--website pull-right">
-                          <label for="name"></label>
+                          <label for="website"></label>
                           <input type="text" placeholder="Link do Twojej strony" name="name" id="name_input" required>
                         </div>
                         <div class="company--phone pull-left">
-                          <label for="name"></label>
+                          <label for="phone"></label>
                           <input type="text" placeholder="Numer telefonu - Oddzwonimy" name="telephone" id="telephone_input" required>
                         </div>
                         <div class="service--time--limit pull-right">
-                          <label for="name"></label>
+                          <label for="term"></label>
                           <input type="text" placeholder="Termin realizacji" name="telephone" id="telephone_input" required>
                         </div>
                         <div class="message">
@@ -231,14 +231,14 @@
 <!-- Action Box Section -->
 <section id="action-box" class="ptb">
 <div class="container">
-    <div class="row justify-content-center">
+    <div class="row">
         <div class="row item active justify-content-center align-items-center">
-          <div class="ml-30 mr-30 col-md-5">
+          <div class="ml-30 mr-30 col-sm-10 col-md-5">
               <div class="img">
                   <img src="img/website.jpg" alt="Projektowanie stron internetowych">
               </div>
           </div>
-          <div class="ml-30 mr-30 col-md-5">
+          <div class="ml-30 mr-30 col-sm-10 col-md-5">
               <div class="desc">
                   <h3 class="font--color--dark--grey">Strona internetowa skrojona na miarę</h3>
                   <p></p>
@@ -247,8 +247,8 @@
               </div>
           </div>
         </div>   
-        <div class="row item d-flex p-2 bd-highlight flex-md-row flex-column-reverse active justify-content-center align-items-center mtb-60">
-          <div class="ml-30 mr-30 col-md-5">
+        <div class="row item active justify-content-center align-items-center mtb-60">
+          <div class="ml-30 mr-30 col-sm-10 col-md-5 order-2 order-md-1">
               <div class="desc">
                   <h3 class="font--color--dark--grey">Responsywna strona internetowa</h3>
                   <p></p>
@@ -256,23 +256,23 @@
                   <p></p>
               </div>
           </div>
-          <div class="ml-30 mr-30 col-md-5">
+          <div class="ml-30 mr-30 col-sm-10 col-md-5 order-1 order-md-2">
               <div class="img"> 
                   <img src="img/mobile.png" alt="Projektowanie stron internetowych">
               </div>
           </div>
         </div>
         <div class="row item active justify-content-center align-items-center">
-          <div class="ml-30 mr-30 col-md-5">
+          <div class="ml-30 mr-30 col-sm-10 col-md-5">
               <div class="img">
                   <img src="img/browser.png" alt="Projektowanie stron internetowych">
               </div>
           </div>
-          <div class="ml-30 mr-30 col-md-5">
+          <div class="ml-30 mr-30 col-sm-10 col-md-5">
               <div class="desc">
                   <h3 class="font--color--dark--grey">Strona zoptymalizowana pod wyszukiwarkę</h3>
                   <p></p>
-                  <p class="lead">Tworząc <b>strony</b> umieszczamy dbamy o to aby były <b>przyjazne dla wyszukiwarki.</b>pDoradzamy również o jakie elementy zadbać w poźniejszym czasie, aby strona była lepiej wypozycjonowana. </p>
+                  <p class="lead">Tworząc <b>strony</b> dbamy o to aby były <b>przyjazne dla wyszukiwarki.</b> Doradzamy również o jakie elementy zadbać w poźniejszym czasie, aby strona była lepiej wypozycjonowana. </p>
                   <p></p>
               </div>
           </div>

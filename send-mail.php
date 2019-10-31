@@ -1,6 +1,6 @@
 <?php
 
-$to = 'contact@tailoredwebs.pl'; // Change your email address
+$to = 'patryk.watras@wp.pl'; // Change your email address
 
 
 $name = $_POST['name'];
@@ -11,7 +11,7 @@ $message = $_POST['message'];
 
 // Email Submit
 // Note: filter_var() requires PHP >= 5.2.0
- if ( isset($email) && isset($name) && isset($subject) && isset($message) && filter_var($email, FILTER_VALIDATE_EMAIL) ) {
+ if ( isset($email) && isset($name) && isset($company) && isset($website) && isset($phone) && isset($term) &&  isset($message) && filter_var($email, FILTER_VALIDATE_EMAIL) ) {
 
   // detect & prevent header injections
   $test = "/(content-type|bcc:|cc:|to:)/i";
