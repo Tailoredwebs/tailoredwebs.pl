@@ -596,8 +596,6 @@ button, input, textarea, select {
         outline: none;
         font-weight: 400;
         letter-spacing: 1px;
-        font-size: 13px;
-
         display: inline-block;
     }
 
