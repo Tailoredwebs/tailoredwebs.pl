@@ -2478,19 +2478,11 @@ form label.error {
 
 
 
-.contact-box-left, .contact-box-top {
-    display: block;
-    position: relative;
-}
 
-.contact-box-left {
-    padding-left: 45px;
-    text-align: left;
-}
 
 .contact-icon-left, .contact-icon-top {
     font-size: 30px;
-    position: absolute;
+    padding-bottom: 20px;
 }
 
 .contact-icon-top {
