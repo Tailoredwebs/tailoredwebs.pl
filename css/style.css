@@ -3,7 +3,11 @@
 @import url("./plugin/mediaelementplayer.css");
 @import url("./plugin/colorbox.css");
 @import url("./plugin/jquery.fs.tipper.css");
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900);
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap&subset=latin-ext');
+
+
+
+
 
 /*
 * BASIC STYLE
@@ -87,8 +91,6 @@ body {
     line-height: 24px;
     color: #323232;
     font-size: 13px;
-    /* font-family: 'Raleway', sans-serif; */
-    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
 }
@@ -3598,7 +3600,9 @@ form label.error {
 }
 
     .item-box a {
-        display: inline-block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .item-box:hover .item-mask {
@@ -4440,10 +4444,11 @@ img[src*="poland"] {
 }
 
 /* Form CSS */
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url('https://fonts.googleapis.com/css?family=Prompt:400,700&display=swap&subset=latin-ext');
 
 html {
-  font-family: 'Montserrat', Arial, sans-serif;
+    font-family: 'Prompt', sans-serif;
+    
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -4609,7 +4614,7 @@ textarea {
   color: #474544;
   cursor: pointer;
   display: inline-block;
-  font-family: 'Helvetica', Arial, sans-serif;
+  /* font-family: 'Helvetica', Arial, sans-serif; */
   font-size: 0.875em;
   font-weight: bold;
   outline: none;
