@@ -59,26 +59,29 @@
                   <a href="#intro">Home</a>
                 </li>
                 <li class="nav-menu-item">
-                  <a lang="pl" href="#about">O nas</a>
-                  <a lang="en" href="#about">About</a>
+                  <a class="showPL" href="#about">O nas</a>
+                  <a class="showEN" href="#about">About</a>
                 </li>
                 <li class="nav-menu-item">
-                  <a lang="pl" href="#work">Projekty</a>
-                  <a lang="en" href="#work">Projects</a>
+                  <a class="showPL" href="#work">Projekty</a>
+                  <a class="showEN" href="#work">Projects</a>
                 </li>
                 <li class="nav-menu-item">
-                  <a lang="pl" href="#service">Technologie</a>
-                  <a lang="en" href="#service">Technologies</a>
+                  <a class="showPL" href="#service">Technologie</a>
+                  <a class="showEN" href="#service">Technologies</a>
                 </li>
                 <li class="nav-menu-item">
-                  <a lang="pl" href="#contact-info">Kontakt</a>
-                  <a lang="en" href="#contact-info">Contact</a>
+                  <a class="showPL" href="#contact-info">Kontakt</a>
+                  <a class="showEN" href="#contact-info">Contact</a>
                 </li>
                 <!-- Buttons lang -->
-                <li>
-                  <img onclick="$('[lang]').languageSwitcher('pl')" src="img/flags/poland-flag-icon-32.png" />
-                  <img onclick="$('[lang]').languageSwitcher('en')" src="img/flags/united-kingdom-flag-icon-32.png" />
+                <li class="nav-menu-item-lang">
+                  <a id="flag-pl" onclick="$('[lang]').languageSwitcher('pl')"> PL </a>
+                 
                 </li>
+                <li class="nav-menu-item-lang flag-en">
+                    <a id="flag-en" onclick="$('[lang]').languageSwitcher('en')"> EN </a>
+                  </li>
                 <!-- End buttons lang -->
               </ul>
             </div>
@@ -100,7 +103,7 @@
     <section id="intro" class="dark-bg">
 
       <!-- Intro Canvas Pattern -->
-      <div class="intro-media-wraper bg-image overlay-dark parallax parallax-section1" style="background-image: url('img/wall.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center top; width: 100%; height: 100%;">
+      <div class="intro-media-wraper bg-image overlay-dark parallax parallax-section1">
         <!-- Canvas Pattern -->
         <canvas id="pollyfill-canvas"></canvas>
         <!-- End Canvas Pattern -->
@@ -110,15 +113,14 @@
       <!-- Caption Section -->
       <div class="intro-overlay-section">
         <div class="js-fullscreen-height intro-caption-top container">
-          <div class="intro-content grid-container">
-            <div class="intro-content-inner grid-center-area">
-              <!-- <h1 class="h1"><span class="title-1st-word">Dzień</span> dobry!</h1>
-              <h1 class="h1">Stworzymy<span class="title-1st-word"> dla Ciebie </span>stronę</h1> -->
-              <!-- <h1 class="h1"><span class="title-1st-word">You</span> grow</h1> -->
+          <div class="intro-content">
+            <div class="intro-content-inner subtitle">
+              <h1 lang="pl" class="h1">Zbudujemy</br>Twoją<span class="title-1st-word">stronę</span></h1> 
+              <h1 lang="en" class="h1">We will build Your<span class="title-1st-word">website</span></h1> 
               <br>
-              <div lang="pl" class="nav-menu singlepage-nav"><a href="#form-section" class="btn btn-md btn-white-line xs-hidden">Stwórzmy razem Twoją stronę</a>
+              <div class="showPL singlepage-nav"><a href="#form-section" class="btn btn-md btn-white-line">Zbudujmy razem Twoją stronę</a>
               </div>
-              <div lang="en" class="nav-menu singlepage-nav"><a href="#form-section" class="btn btn-md btn-white-line xs-hidden">Introduce yourself</a>
+              <div class="showEN singlepage-nav"><a href="#form-section" class="btn btn-md btn-white-line">Let's create your website together</a>
               </div>
             </div>
           </div>
@@ -129,46 +131,62 @@
 <!-- Contact Section -->
 <section id="form-section" class="ptb-80 ptb-sm-80">
         <div class="container">
-             <div class="row d-flex justify-content-center no--after">
-              <h3 class="h3 text-center" lang="pl">Twoja strona w dwóch zdaniach</h3>
-              <h3 class="h3 text-center" lang="en">Keep in Touch</h3>
-              <h3 class="h3 text-center" lang="pl">Napisz - przygotujemy propozycję dla Ciebie</h3>
-              <h3 class="h3 text-center" lang="en">It will allow us to present you an offer faster</h3>
-            </div>
-              
+          <div class="row subtitle no--after">
+          <h3 class="h3 text-center" lang="pl">Napisz do nas</h3>
+          <h3 class="h3 text-center" lang="en">Your website in a shortcut</h3>
+          <h3 class="h3 text-center" lang="pl">Przygotujemy projekt Twojej strony</h3>
+          <h3 class="h3 text-center" lang="en">We will present you an offer</h3>
+        </div>
+        <div class="container">  
+          <div class="row subtitle no--after">
+            <i class="fas fa-file-signature"></i>
+          </div>
         </div>
             <div class="container">
               <form action="send-mail.php" method="post" id="contact_form">
                 <div class="name pull-left">
                   <label for="name"></label>
-                  <input type="text" placeholder="Twoje imię" name="name" id="name_input" required>
+                  <input lang="pl" type="text" placeholder="Twoje imię" name="name" id="name_input" required>
+                  <input lang="en" type="text" placeholder="Your Name" name="name" id="name_input" required>
                 </div>
                 <div class="email pull-right">
                   <label for="email"></label>
-                  <input type="email" placeholder="Twój mail" name="email" id="email_input" required>
+                  <input lang="pl" type="email" placeholder="Twój mail" name="email" id="email_input" required>
+                  <input lang="en" type="email" placeholder="Your Email" name="email" id="email_input" required>
                 </div>
                 <div class="company--name pull-left">
                   <label for="company"></label>
-                  <input type="text" placeholder="Nazwa Twojej firmy" name="name" id="name_input" required>
+                  <input lang="pl" type="text" placeholder="Nazwa Twojej firmy" name="name" id="name_input" required>
+                  <input lang="en" type="text" placeholder="Your Company Name" name="name" id="name_input" required>
+
                 </div>
                 <div class="company--website pull-right">
                   <label for="website"></label>
-                  <input type="text" placeholder="Link do Twojej strony" name="name" id="name_input" required>
+                  <input lang="pl" type="text" placeholder="Link do Twojej strony" name="name" id="name_input" required>
+                  <input lang="en" type="text" placeholder="Your Company Website" name="name" id="name_input" required>
                 </div>
                 <div class="company--phone pull-left">
                   <label for="phone"></label>
-                  <input type="text" placeholder="Numer telefonu - Oddzwonimy" name="telephone" id="telephone_input" required>
+                  <input lang="pl" type="text" placeholder="Numer telefonu - Oddzwonimy" name="telephone" id="telephone_input" required>
+                  <input lang="en" type="text" placeholder="Your Phone - We will call you ASAP" name="telephone" id="telephone_input" required>
                 </div>
                 <div class="service--time--limit pull-right">
                   <label for="term"></label>
-                  <input type="text" placeholder="Termin realizacji" name="telephone" id="telephone_input" required>
+                  <input lang="pl" type="text" placeholder="Termin realizacji" name="telephone" id="telephone_input" required>
+                  <input lang="en" type="text" placeholder="Lead Time" name="telephone" id="telephone_input" required>
                 </div>
                 <div class="message">
                   <label for="message"></label>
-                  <textarea name="textarea" placeholder="Czy masz jakieś dodatkowe wskazówki (np. linki do stron konkurencji, preferowana kolorystyka itd.)" id="message_input" cols="30" rows="5" required></textarea>
+                  <textarea lang="pl" name="textarea" placeholder="Czy masz jakieś dodatkowe wskazówki np. linki do stron konkurencji, preferowana kolorystyka itd.)" id="message_input" cols="30" rows="5" required></textarea>
+                  <textarea lang="en" name="textarea" placeholder="Do you have any additional clues? Don't hesitate to write us" id="message_input" cols="30" rows="5" required></textarea>
                 </div>
                 <div class="submit singlepage-nav">
-                  <input type="submit" value="Wyślij wiadomość" class="btn" id="form_button" />
+                  <div class="showPL subtitle">
+                    <input type="submit" value="Wyślij wiadomość" class="btn showPL" id="form_button" />
+                  </div>
+                  <div class="showEN subtitle">
+                    <input type="submit" value="Send" class="btn showEN" id="form_button" />
+                  </div>
                 </div>
               </form><!-- // End form -->
             </div>
@@ -180,7 +198,7 @@
       <!-- Contact Section -->
 
 <!-- Action Box Section -->
-<section id="action-box" class="ptb">
+<section id="action-box" class="ptb ptb-sm-80">
 <div class="container">
    
         <div class="row item active justify-content-center align-items-center">
@@ -191,9 +209,11 @@
           </div>
           <div class="col-sm-10 col-md-6">
               <div class="desc">
-                  <h3 class="font--color--dark--grey text-center">Strona internetowa skrojona na miarę</h3>
+                  <h3 lang="pl" class="font--color--dark--grey text-center pt-sm-20">Strona internetowa skrojona na miarę</h3>
+                  <h3 lang="en" class="font--color--dark--grey text-center pt-sm-20">Tailored website</h3>
                   <p></p>
-                  <p class="lead">Nowoczesna witryna internetowa to absolutna wizytówka każdego biznesu. Zaprojektujemy ją tak by była skuteczna, <strong>dostosowana do Ciebie i łatwa w odbiorze dla Twoich klientów.</strong> </p>
+                  <p lang="pl" class="lead">Nowoczesna witryna internetowa to absolutna wizytówka każdego biznesu. Twoja strona powinna reprezentować Ciebie i być dostosowana do Twojej branży. Zaprojektujemy ją tak by była skuteczna, <strong>dostosowana do Ciebie i łatwa w odbiorze dla Twoich klientów.</strong> </p>
+                  <p lang="en" class="lead">A modern website is an absolute showcase of every business. Your website should represent you and be tailored to your industry. We will design it so that it is effective, <strong> adapted to you and easy to pick up for your customers.</strong> </p>
                   <p></p>
               </div>
           </div>
@@ -201,29 +221,34 @@
         <div class="row item active justify-content-center align-items-center mtb-60">
           <div class=" col-sm-10 col-md-6 order-2 order-md-1">
               <div class="desc">
-                  <h3 class="font--color--dark--grey text-center">Responsywna strona internetowa</h3>
+                  <h3 lang="pl" class="font--color--dark--grey text-center pt-sm-20">Responsywna strona internetowa</h3>
+                  <h3 lang="en" class="font--color--dark--grey text-center pt-sm-20">Responsive Web Design</h3>
                   <p></p>
-                  <p class="lead">Zdecydowana większość użytkowników <strong>korzysta z internetu w telefonach.</strong> Wszystkie nasze strony są dostosowane do urządzeń mobilnych. </p>
+                  <p lang="pl" class="lead">Zdecydowana większość użytkowników <strong>korzysta z internetu w telefonach.</strong> Twoja strona musi się bardzo dobrze prezentować zarówno na komputerze jak i na tablecie i telefonie. Wszystkie nasze strony są dostosowane do urządzeń mobilnych. </p>
+                  <p lang="en" class="lead">The vast majority of users <strong>use the internet on their phones.</strong> Your website must look great on both your computer and tablet and phone. All our pages are adapted to mobile devices.
+                    </p>
                   <p></p>
               </div>
           </div>
           <div class="col-sm-10 col-md-6 order-1 order-md-2">
               <div class="img"> 
-                  <img src="img/mobile.png" alt="Projektowanie stron internetowych">
+                  <img src="img/mobile2.png" alt="Projektowanie stron internetowych">
               </div>
           </div>
         </div>
         <div class="row item active justify-content-center align-items-center">
           <div class="col-sm-10 col-md-6">
               <div class="img">
-                  <img src="img/browser.png" alt="Projektowanie stron internetowych">
+                  <img src="img/seo.png" alt="Projektowanie stron internetowych">
               </div>
           </div>
           <div class="col-sm-10 col-md-6">
               <div class="desc">
-                  <h3 class="font--color--dark--grey text-center">Strona zoptymalizowana pod wyszukiwarkę</h3>
+                  <h3 lang="pl" class="font--color--dark--grey text-center pt-sm-20">Strona zoptymalizowana pod wyszukiwarkę</h3>
+                  <h3 lang="en" class="font--color--dark--grey text-center pt-sm-20">Website SEO friendly</h3>
                   <p></p>
-                  <p class="lead">Tworząc <b>strony</b> dbamy o to aby były <b>przyjazne dla wyszukiwarki.</b> Doradzamy również o jakie elementy zadbać w poźniejszym czasie, aby strona była lepiej wypozycjonowana. </p>
+                  <p lang="pl" class="lead">Tworząc <b>strony</b> dbamy o to aby były <b>przyjazne dla robotów wyszukiwarki.</b> Doradzimy Ci o jakie elementy zadbać na stronie, aby łatwiej było ją później pozycjonować i aby pojawiała się jeszcze wyżej w wynikach wyszukiwania. </p>
+                  <p lang="en" class="lead">When creating pages, we make sure that they are <strong>friendly to search engine robots.</strong> We will advise you on what elements to take care of on the site so that it is easier to position it later and that it appears even higher in the search results. </p>
                   <p></p>
               </div>
           </div>
@@ -235,44 +260,55 @@
 
 
     <!-- Benefits Section -->
-    <section id="offer" class="container-full page-offer-box-desc-points section effect-show-items-1 ptb">
+    <section id="offer" class="container-full page-offer-box-desc-points section effect-show-items-1 ptb ptb-sm-80">
         <div class="container lead">
             <header class="section-header text-center">
-                <h3 class="font--color--light">Co zyskujesz</h3>
+                <h3 lang="pl" class="font--color--light">Co zyskujesz</h3>
+                 <h3 lang="en" class="font--color--light">Your benefits</h3>
             </header>
             <ul class="offer--list font--color--light mt-60 d-flex">
                 <li class="item active"> 
                     <i class="far fa-check-square"></i>
-                    <span>Darmowa wycena projektu</span>
+                    <span lang="pl">Darmowa wycena projektu</span>
+                    <span lang="en">Free project quote</span>
+
                 </li>
                 <li class="item active">
                     <i class="far fa-check-square"></i>
-                    <span>Darmowa optymalizacja pod kątem SEO</span>
+                    <span lang="pl">Darmowa optymalizacja pod kątem SEO</span>
+                    <span lang="en">Free SEO optimization</span>
                 </li>
                 <li class="item active">
                     <i class="far fa-check-square"></i>
-                    <span>Dedykowany projekt graficzny</span>
+                    <span lang="pl">Dedykowany projekt graficzny</span>
+                    <span lang="en">Dedicated graphic design</span>
                 </li>
                 <li class="item active">
                     <i class="far fa-check-square"></i>
-                    <span>Dostosowane do urządzeń mobilnych</span>
+                    <span lang="pl">Dostosowane do urządzeń mobilnych</span>
+                    <span lang="en">Adapted to mobile devices</span>
                 </li>
 
                 <li class="item active">
                     <i class="far fa-check-square"></i>
-                    <span>Narzędzia statystyczne i analityczne wbudowane w stronę</span>
+                    <span lang="pl">Narzędzia statystyczne i analityczne wbudowane w stronę</span>
+                    <span lang="en">Statistical and analytical tools built-in</span>
+                  </li>
+                <li class="item active">
+                    <i class="far fa-check-square"></i>
+                    <span lang="pl">Integracja strony z mediami społecznościowymi</span>
+                    <span lang="en">Website integration with social media</span>
                 </li>
                 <li class="item active">
                     <i class="far fa-check-square"></i>
-                    <span>Integracja strony z mediami społecznościowymi</span>
+                    <span lang="pl">Doradztwo na każdym etapie tworzenia strony</span>
+                    <span lang="en">Consulting at every stage of website creation</span>
                 </li>
                 <li class="item active">
                     <i class="far fa-check-square"></i>
-                    <span>Doradztwo na każdym etapie tworzenia strony</span>
-                </li>
-                <li class="item active">
-                    <i class="far fa-check-square"></i>
-                    <span>Możliwość dalszej rozbudowy strony</span>
+                    <span lang="pl">Możliwość dalszej rozbudowy strony</span>
+                    <span lang="en">The possibility of further expansion of the site</span>
+
                 </li>
 
             </ul>
@@ -429,39 +465,38 @@
       <div class="container">
         <div class="row text-center">
           <div class="col-md-8 offset-md-2">
-            <h3 lang="pl" class="h4 font--color--light">O nas</h3>
-            <h3 lang="en" class="h4 font--color--light">About us</h3>
+            <h3 lang="pl" class="h4 font--color--dark">O nas</h3>
+            <h3 lang="en" class="h4 font--color--dark">About us</h3>
             <div class="spacer-15"></div>
-            <p lang="pl" class="lead font--color--light">Jesteśmy zespołem pasjonatów tworzących nowoczesne, funkcjonalne i responsywne <strong>strony internetowe.</strong>
+            <p lang="pl" class="lead font--color--dark">Jesteśmy zespołem pasjonatów tworzących nowoczesne, funkcjonalne i responsywne <strong>strony internetowe.</strong>
               Jeśli chcesz być widoczny w sieci, zaprezentować swoją firmę klientom, pozwolić aby łatwo i szybko się z Tobą skontaktowali – napisz lub zadzwoń <strong>do nas.</strong></p>
-            <p lang="en" class="lead font--color--light">We're team ... pasjonatów tworzących nowoczesne, funkcjonalne i responsywne <strong>strony internetowe.</strong>
-              Jeśli chcesz być widoczny w sieci, zaprezentować swoją firmę klientom, pozwolić aby łatwo i szybko się z Tobą skontaktowali – napisz lub zadzwoń <strong>do nas.</strong></p>
+            <p lang="en" class="lead font--color--dark">We are a team of enthusiasts who create modern, functional and responsive websites. If you want to be visible on the Internet, present your company to customers and allow them to contact you easily and quickly - write or call us.</p>
           </div>
           <div class="container d-flex justify-content-center align-items-center">
             <div class="row">
               <div class="col-sm-12 col-md-4 mt-60 d-flex flex-column align-items-center">
-                      <h5 class="h2 font--color--light">Matylda</h5>
+                      <h5 class="h2 font--color--dark">Matylda</h5>
                       <div class="spacer-15"></div>
                       <div class="img">
                               <img src="img/girl.png" alt="Paweł">
                       </div>
-                      <p class="lead mt-30 font--color--light">Grafik i marketingowiec. Projektuje doskonałe strony, które Paweł i Patryk zamieniają na kod</p>
+                      <p class="lead mt-30 font--color--dark">Grafik i marketingowiec. Projektuje doskonałe strony, które Paweł i Patryk zamieniają na kod</p>
                   </div>
               <div class="col-sm-12 col-md-4 mt-60 d-flex flex-column align-items-center">
-                  <h5 class="h2 font--color--light">Paweł</h5>
+                  <h5 class="h2 font--color--dark">Paweł</h5>
                   <div class="spacer-15"></div>
                   <div class="img">
                           <img src="img/man.png" alt="Paweł">
                   </div>
-                  <p class="lead mt-30 font--color--light">Kobieciarz, żadnej nie przepuści. Lubi drogie alkohole, nie wylewa za kołnierz.</p>
+                  <p class="lead mt-30 font--color--dark">Kobieciarz, żadnej nie przepuści. Lubi drogie alkohole, nie wylewa za kołnierz.</p>
               </div>
               <div class="col-sm-12 col-md-4 mt-60 d-flex flex-column align-items-center">
-                  <h5 class="h2 font--color--light">Patryk</h5>
+                  <h5 class="h2 font--color--dark">Patryk</h5>
                   <div class="spacer-15"></div>
                   <div class="img">
                       <img src="img/boy.png" alt="Patryk">
                   </div>
-                  <p class="lead mt-30 font--color--light">Alkoholik, mówi, że urodził się z kieliszkiem w ręku. Nie lubi sportu i brzydkich kobiet.</p>
+                  <p class="lead mt-30 font--color--dark">Alkoholik, mówi, że urodził się z kieliszkiem w ręku. Nie lubi sportu i brzydkich kobiet.</p>
               </div>
             </div>
         </div>
