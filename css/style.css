@@ -4678,7 +4678,8 @@ textarea {
 }
 
 h1, h1.h1{
-    font-size: 3rem;
+    font-size: 2.5rem;
+    line-height: 3.5rem;
 }
 
 }
@@ -4714,6 +4715,14 @@ h1, h1.h1{
   input[type='text'], [type='email'], select, textarea {
     font-size: 0.875em;
   }
+}
+
+@media screen and (max-width: 359px){
+    h1, h1.h1{
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    
 }
 
 .no--after h3::after{
