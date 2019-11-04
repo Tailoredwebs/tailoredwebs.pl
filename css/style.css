@@ -3,7 +3,11 @@
 @import url("./plugin/mediaelementplayer.css");
 @import url("./plugin/colorbox.css");
 @import url("./plugin/jquery.fs.tipper.css");
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900);
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap&subset=latin-ext');
+
+
+
+
 
 /*
 * BASIC STYLE
@@ -87,8 +91,6 @@ body {
     line-height: 24px;
     color: #323232;
     font-size: 13px;
-    /* font-family: 'Raleway', sans-serif; */
-    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
 }
@@ -314,6 +316,8 @@ h1 {
 
     .title-1st-word {
         color: #D3D3D3;
+        border: 2px solid #d3d3d3;
+    
     }
 
     .grid-container {
@@ -987,6 +991,10 @@ form label.error {
         padding-bottom: 30px;
     }
 
+    .pt-sm-20{
+        padding-top: 20px;
+    }
+
     .pt-sm-30 {
         padding-top: 30px;
     }
@@ -1427,7 +1435,6 @@ form label.error {
 
             .nav-menu > ul > li > a, .header.no-stick.fixed .nav-menu > ul > li > a, .header.fixed.no-stick .nav-menu > ul > li > a {
                 padding: 36px 15px;
-                display: inline-block;
                 position: relative;
                 font-size: 12px;
                 line-height: 1;
@@ -1492,6 +1499,12 @@ form label.error {
             border-bottom: 1px solid #eee;
         }
 
+        .nav-menu > ul > li:last-child{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
             .nav-menu > ul > li:first-child {
                 border-top: 1px solid #eee;
             }
@@ -1499,10 +1512,16 @@ form label.error {
             .header.header--sticky.fixed .nav-menu > ul > li > a, .header .nav-menu > ul > li > a, .nav-menu > ul > li > a {
                 padding: 12px 15px;
                 width: 100%;
-                display: block;
+                /* display: block; */
                 position: relative;
                 color: #27313e;
                 line-height: 1;
+            }
+            .nav-menu-item-lang a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 14px;
             }
 }
 
@@ -2021,7 +2040,9 @@ form label.error {
     margin: 0 auto;
     height: 100%;
     vertical-align: middle;
+    color:#474544;
 }
+
 
 
 .intro-img-circle {
@@ -2099,6 +2120,7 @@ form label.error {
     overflow: hidden;
     position: relative;
     width: 100%;
+    
     /*background-attachment: fixed;*/
 }
 
@@ -2473,6 +2495,15 @@ form label.error {
 /* FORM BRIEF Start */
 #contact-section {
     background: #F2F3EB;
+}
+
+.subtitle i {
+    font-size: 3rem;
+    line-height: 6rem;
+}
+
+#form_button {
+    margin: 0 auto;
 }
 /* FORM BRIEF End */
 
@@ -3248,7 +3279,7 @@ form label.error {
 
 
 .nf-row2 .nf-item.spacing, .nf-item.spacing, .nf-row2 .grid-sizer.spacing, .spacing-box {
-    padding: 25px;
+    padding: 10px;
 }
 
 .spacing-grid {
@@ -3598,7 +3629,10 @@ form label.error {
 }
 
     .item-box a {
-        display: inline-block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 15px;
     }
 
     .item-box:hover .item-mask {
@@ -4433,17 +4467,19 @@ img[src*="poland"] {
     align-items: center;
 }
 
-.pawel, .patryk {
+.subtitle {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 /* Form CSS */
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url('https://fonts.googleapis.com/css?family=Prompt:400,700&display=swap&subset=latin-ext');
 
 html {
-  font-family: 'Montserrat', Arial, sans-serif;
+    font-family: 'Prompt', sans-serif;
+    
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -4497,6 +4533,10 @@ h1 {
 .form--subtitle{
     text-align: center;
     color: #474544;
+}
+
+#message_input{
+    padding-top: 60px;
 }
 
 .underline {
@@ -4609,7 +4649,7 @@ textarea {
   color: #474544;
   cursor: pointer;
   display: inline-block;
-  font-family: 'Helvetica', Arial, sans-serif;
+  /* font-family: 'Helvetica', Arial, sans-serif; */
   font-size: 0.875em;
   font-weight: bold;
   outline: none;
@@ -4637,6 +4677,10 @@ textarea {
 	width: 100%;
 }
 
+h1, h1.h1{
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+}
 
 }
 
@@ -4673,12 +4717,20 @@ textarea {
   }
 }
 
+@media screen and (max-width: 359px){
+    h1, h1.h1{
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    
+}
+
 .no--after h3::after{
     content: none;
 }
 /* ABOUT US Start */
 #about{
-    background-color: #222;
+    background-color: #f9f9f9;
 }
 
 .desc h3::after{
@@ -4690,13 +4742,15 @@ textarea {
 
 /* ACTION-BOXUS Start */
 #action-box{
-    background-color: #fff;
+    background-color: #f9f9f9;
 }
 /* ACTION-BOX End */
 
 
 /* WORK start */
-
+#work{
+    background-color: #f9f9f9;
+}
 /* WORK end */
 
 /* OFFER start */
@@ -4746,3 +4800,18 @@ textarea {
     background-color: #222;
 }
 /* SERVICE end */
+
+/* Mobile NAV start*/
+.showEN{
+    display: none;
+}
+
+.showPL{
+   display: block;
+}
+
+a#flag-pl{
+    color: red;
+}
+
+/* Mobile NAV end */
