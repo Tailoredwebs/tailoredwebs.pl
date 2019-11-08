@@ -2493,7 +2493,7 @@ form label.error {
 
 
 /* FORM BRIEF Start */
-#contact-section {
+#form-section {
     background: #F2F3EB;
 }
 
@@ -2502,7 +2502,7 @@ form label.error {
     line-height: 6rem;
 }
 
-#form_button {
+#form-submit {
     margin: 0 auto;
 }
 /* FORM BRIEF End */
@@ -4532,7 +4532,7 @@ h1 {
     color: #474544;
 }
 
-#message_input{
+#form-message {
     padding-top: 60px;
 }
 
@@ -4640,7 +4640,7 @@ textarea {
 	color: #474544;
 }
 
-#form_button {
+#form-submit {
   background: none;
   border: solid 2px #474544;
   color: #474544;
@@ -4659,7 +4659,7 @@ textarea {
 	transition: all 0.3s; */
 }
 
-#form_button:hover {
+#form-submit:hover {
   background: #474544;
   color: #F2F3EB;
 }
@@ -4690,7 +4690,7 @@ h1, h1.h1{
     width: 68px;
   }
 
-  #form_button {
+  #form-submit {
     padding: 15px 25px;
   }
 }

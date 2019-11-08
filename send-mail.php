@@ -14,7 +14,7 @@ $message = $_POST['message'];
 
 // Email Submit
 // Note: filter_var() requires PHP >= 5.2.0
- if ( isset($email) && isset($name) && isset($website) && isset($company) && isset($phone) && isset($time) && isset($message) && filter_var($email, FILTER_VALIDATE_EMAIL) ) {
+ if ( isset($email) && isset($name) && isset($website) && isset($company) && isset($time) && isset($message) && filter_var($email, FILTER_VALIDATE_EMAIL) ) {
 
   // detect & prevent header injections
   $test = "/(content-type|bcc:|cc:|to:)/i";
@@ -25,7 +25,6 @@ $message = $_POST['message'];
   }
 
 $body = <<<EMAIL
-temat : $company
 
 Imię: $name
 Firma: $company
@@ -36,18 +35,18 @@ Termin realizacji: $time
 
 Wiadomość: $message
 
-From : $name
+Od : $name
 Email : $email
 
 EMAIL;
 
 
-$header = 'From: ' . $_POST["name"] . '<' . $_POST["email"] . '>' . "\r\n" .
+$header = 'Od: ' . $_POST["name"] . '<' . $_POST["email"] . '>' . "\r\n" .
     'Reply-To: ' . $_POST["email"] . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
 
   //
- mail( $to , $_POST['company'], $body, $headers );
+ mail( $to , $_POST['company'], $body, $header );
  // mail($to, $subject, $body, $header);
   //      ^
   //  Replace with your email
