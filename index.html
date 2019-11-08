@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -80,8 +81,8 @@
 
                 </li>
                 <li class="nav-menu-item-lang flag-en">
-                    <a id="flag-en" onclick="$('[lang]').languageSwitcher('en')"> EN </a>
-                  </li>
+                  <a id="flag-en" onclick="$('[lang]').languageSwitcher('en')"> EN </a>
+                </li>
                 <!-- End buttons lang -->
               </ul>
             </div>
@@ -129,10 +130,10 @@
     </section>
     <!-- End Intro Section -->
 
-<!-- Contact Section -->
-<section id="form-section" class="ptb-80 ptb-sm-80">
-        <div class="container">
-          <div class="row subtitle no--after">
+    <!-- Contact Section -->
+    <section id="form-section" class="ptb-80 ptb-sm-80">
+      <div class="container">
+        <div class="row subtitle no--after">
           <h3 class="h3 text-center" lang="pl">Napisz do nas</h3>
           <h3 class="h3 text-center" lang="en">Your website in a shortcut</h3>
           <h3 class="h3 text-center" lang="pl">Przygotujemy projekt Twojej strony</h3>
@@ -143,177 +144,199 @@
             <i class="fas fa-file-signature"></i>
           </div>
         </div>
-            <div class="container">
-              <form action="send-mail.php" method="post" id="contact_form">
-                <div class="name pull-left">
-                  <label for="name"></label>
-                  <input lang="pl" type="text" placeholder="Twoje imię" name="name" id="name_input" required>
-                  <input lang="en" type="text" placeholder="Your Name" name="name" id="name_input" required>
-                </div>
-                <div class="email pull-right">
-                  <label for="email"></label>
-                  <input lang="pl" type="email" placeholder="Twój mail" name="email" id="email_input" required>
-                  <input lang="en" type="email" placeholder="Your Email" name="email" id="email_input" required>
-                </div>
-                <div class="company--name pull-left">
-                  <label for="company"></label>
-                  <input lang="pl" type="text" placeholder="Nazwa Twojej firmy" name="name" id="name_input" required>
-                  <input lang="en" type="text" placeholder="Your Company Name" name="name" id="name_input" required>
+        <div class="container">
+          <form class="contact-form" id="contact" role="form">
+            <!-- IF MAIL SENT SUCCESSFULLY -->
+            <h6 lang="en" class="successContent">
+              <i class="fa fa-check left" style="color: #5cb45d;"></i>Your message has been sent successfully.
+            </h6>
+            <h6 lang="pl" class="successContent">
+              <i class="fa fa-check left" style="color: #5cb45d;"></i>Twoja wiadomość została wysłana.
+            </h6>
+            <!-- END IF MAIL SENT SUCCESSFULLY -->
 
-                </div>
-                <div class="company--website pull-right">
-                  <label for="website"></label>
-                  <input lang="pl" type="text" placeholder="Link do Twojej strony" name="name" id="name_input" required>
-                  <input lang="en" type="text" placeholder="Your Company Website" name="name" id="name_input" required>
-                </div>
-                <div class="company--phone pull-left">
-                  <label for="phone"></label>
-                  <input lang="pl" type="text" placeholder="Numer telefonu - Oddzwonimy" name="telephone" id="telephone_input" required>
-                  <input lang="en" type="text" placeholder="Your Phone - We will call you ASAP" name="telephone" id="telephone_input" required>
-                </div>
-                <div class="service--time--limit pull-right">
-                  <label for="term"></label>
-                  <input lang="pl" type="text" placeholder="Termin realizacji" name="telephone" id="telephone_input" required>
-                  <input lang="en" type="text" placeholder="Lead Time" name="telephone" id="telephone_input" required>
-                </div>
-                <div class="message">
-                  <label for="message"></label>
-                  <textarea lang="pl" name="textarea" placeholder="Czy masz jakieś dodatkowe wskazówki np. linki do stron konkurencji, preferowana kolorystyka itd.)" id="message_input" cols="30" rows="5" required></textarea>
-                  <textarea lang="en" name="textarea" placeholder="Do you have any additional clues? Don't hesitate to write us" id="message_input" cols="30" rows="5" required></textarea>
-                </div>
-                <div class="submit singlepage-nav">
-                  <div class="showPL subtitle">
-                    <input type="submit" value="Wyślij wiadomość" class="btn showPL" id="form_button" />
-                  </div>
-                  <div class="showEN subtitle">
-                    <input type="submit" value="Send" class="btn showEN" id="form_button" />
-                  </div>
-                </div>
-              </form><!-- // End form -->
+            <!-- MAIL SENDING UNSUCCESSFULL -->
+            <h6 lang="en" class="errorContent">
+              <i class="fa fa-exclamation-circle left" style="color: #e1534f;"></i>There was a problem validating the form please check!
+            </h6>
+            <h6 lang="pl" class="errorContent">
+              <i class="fa fa-exclamation-circle left" style="color: #e1534f;"></i>Wystąpił błąd. Sprawdź wprowadzone dane.
+            </h6>
+            <!-- END MAIL SENDING UNSUCCESSFULL -->
+            <div class="name pull-left">
+              <label for="name"></label>
+              <input lang="pl" type="text" placeholder="Twoje imię" name="name" id="form-name" required>
+              <input lang="en" type="text" placeholder="Your Name" name="name" id="form-name" required>
             </div>
+            <div class="email pull-right">
+              <label for="email"></label>
+              <input lang="pl" type="email" placeholder="Twój mail" name="email" id="form-email" required>
+              <input lang="en" type="email" placeholder="Your Email" name="email" id="form-email" required>
+            </div>
+            <div class="company--name pull-left">
+              <label for="company"></label>
+              <input lang="pl" type="text" placeholder="Nazwa Twojej firmy" name="name" id="form-company" required>
+              <input lang="en" type="text" placeholder="Your Company Name" name="name" id="form-company" required>
 
-              <!-- END Contact FORM -->
-
+            </div>
+            <div class="company--website pull-right">
+              <label for="website"></label>
+              <input lang="pl" type="text" placeholder="Link do Twojej strony" name="name" id="form-website" required>
+              <input lang="en" type="text" placeholder="Your Company Website" name="name" id="form-website" required>
+            </div>
+            <div class="company--phone pull-left">
+              <label for="phone"></label>
+              <input lang="pl" type="text" placeholder="Numer telefonu - Oddzwonimy" name="telephone" id="form-phone" required>
+              <input lang="en" type="text" placeholder="Your Phone - We will call you ASAP" name="telephone" id="form-phone" required>
+            </div>
+            <div class="service--time--limit pull-right">
+              <label for="term"></label>
+              <input lang="pl" type="text" placeholder="Termin realizacji" name="telephone" id="form-time" required>
+              <input lang="en" type="text" placeholder="Lead Time" name="telephone" id="form-time" required>
+            </div>
+            <div class="message">
+              <label for="message"></label>
+              <textarea lang="pl" name="textarea" placeholder="Czy masz jakieś dodatkowe wskazówki np. linki do stron konkurencji, preferowana kolorystyka itd.)" id="form-message" cols="30" rows="5" required></textarea>
+              <textarea lang="en" name="textarea" placeholder="Do you have any additional clues? Don't hesitate to write us" id="form-message" cols="30" rows="5" required></textarea>
+            </div>
+            <div class="submit singlepage-nav">
+              <div class="showPL subtitle">
+                <input type="submit" value="Wyślij wiadomość" class="btn showPL" id="form-submit" />
+              </div>
+              <div class="showEN subtitle">
+                <input type="submit" value="Send" class="btn showEN" id="form-submit" />
+              </div>
+            </div>
+          </form><!-- // End form -->
         </div>
-      </section>
-      <!-- Contact Section -->
 
-<!-- Action Box Section -->
-<section id="action-box" class="ptb ptb-sm-80">
-<div class="container">
+        <!-- END Contact FORM -->
+
+      </div>
+    </section>
+    <!-- Contact Section -->
+
+    <!-- Action Box Section -->
+    <section id="action-box" class="ptb ptb-sm-80">
+      <div class="container">
 
         <div class="row item active justify-content-center align-items-center">
           <div class="col-sm-10 col-md-6">
-              <div class="img">
-                  <img src="img/website.jpg" alt="Projektowanie stron internetowych">
-              </div>
+            <div class="img">
+              <img src="img/website.jpg" alt="Projektowanie stron internetowych">
+            </div>
           </div>
           <div class="col-sm-10 col-md-6">
-              <div class="desc">
-                  <h3 lang="pl" class="font--color--dark--grey text-center pt-sm-20">Strona internetowa skrojona na miarę</h3>
-                  <h3 lang="en" class="font--color--dark--grey text-center pt-sm-20">Tailored website</h3>
-                  <p></p>
-                  <p lang="pl" class="lead">Nowoczesna witryna internetowa to absolutna wizytówka każdego biznesu. Twoja strona powinna reprezentować Ciebie i być dostosowana do Twojej branży. Zaprojektujemy ją tak by była skuteczna, <strong>dostosowana do Ciebie i łatwa w odbiorze dla Twoich klientów.</strong> </p>
-                  <p lang="en" class="lead">A modern website is an absolute showcase of every business. Your website should represent you and be tailored to your industry. We will design it so that it is effective, <strong> adapted to you and easy to pick up for your customers.</strong> </p>
-                  <p></p>
-              </div>
+            <div class="desc">
+              <h3 lang="pl" class="font--color--dark--grey text-center pt-sm-20">Strona internetowa skrojona na miarę</h3>
+              <h3 lang="en" class="font--color--dark--grey text-center pt-sm-20">Tailored website</h3>
+              <p></p>
+              <p lang="pl" class="lead">Nowoczesna witryna internetowa to absolutna wizytówka każdego biznesu. Twoja strona powinna reprezentować Ciebie i być dostosowana do Twojej branży. Zaprojektujemy ją tak by była skuteczna, <strong>dostosowana
+                  do Ciebie i łatwa w odbiorze dla Twoich klientów.</strong> </p>
+              <p lang="en" class="lead">A modern website is an absolute showcase of every business. Your website should represent you and be tailored to your industry. We will design it so that it is effective, <strong> adapted to you and easy to
+                  pick up for your customers.</strong> </p>
+              <p></p>
+            </div>
           </div>
         </div>
         <div class="row item active justify-content-center align-items-center mtb-60">
           <div class=" col-sm-10 col-md-6 order-2 order-md-1">
-              <div class="desc">
-                  <h3 lang="pl" class="font--color--dark--grey text-center pt-sm-20">Responsywna strona internetowa</h3>
-                  <h3 lang="en" class="font--color--dark--grey text-center pt-sm-20">Responsive Web Design</h3>
-                  <p></p>
-                  <p lang="pl" class="lead">Zdecydowana większość użytkowników <strong>korzysta z internetu w telefonach.</strong> Twoja strona musi się bardzo dobrze prezentować zarówno na komputerze jak i na tablecie i telefonie. Wszystkie nasze strony są dostosowane do urządzeń mobilnych. </p>
-                  <p lang="en" class="lead">The vast majority of users <strong>use the internet on their phones.</strong> Your website must look great on both your computer and tablet and phone. All our pages are adapted to mobile devices.
-                    </p>
-                  <p></p>
-              </div>
+            <div class="desc">
+              <h3 lang="pl" class="font--color--dark--grey text-center pt-sm-20">Responsywna strona internetowa</h3>
+              <h3 lang="en" class="font--color--dark--grey text-center pt-sm-20">Responsive Web Design</h3>
+              <p></p>
+              <p lang="pl" class="lead">Zdecydowana większość użytkowników <strong>korzysta z internetu w telefonach.</strong> Twoja strona musi się bardzo dobrze prezentować zarówno na komputerze jak i na tablecie i telefonie. Wszystkie nasze
+                strony są dostosowane do urządzeń mobilnych. </p>
+              <p lang="en" class="lead">The vast majority of users <strong>use the internet on their phones.</strong> Your website must look great on both your computer and tablet and phone. All our pages are adapted to mobile devices.
+              </p>
+              <p></p>
+            </div>
           </div>
           <div class="col-sm-10 col-md-6 order-1 order-md-2">
-              <div class="img">
-                  <img src="img/mobile2.png" alt="Projektowanie stron internetowych">
-              </div>
+            <div class="img">
+              <img src="img/mobile2.png" alt="Projektowanie stron internetowych">
+            </div>
           </div>
         </div>
         <div class="row item active justify-content-center align-items-center">
           <div class="col-sm-10 col-md-6">
-              <div class="img">
-                  <img src="img/seo.png" alt="Projektowanie stron internetowych">
-              </div>
+            <div class="img">
+              <img src="img/seo.png" alt="Projektowanie stron internetowych">
+            </div>
           </div>
           <div class="col-sm-10 col-md-6">
-              <div class="desc">
-                  <h3 lang="pl" class="font--color--dark--grey text-center pt-sm-20">Strona zoptymalizowana pod wyszukiwarkę</h3>
-                  <h3 lang="en" class="font--color--dark--grey text-center pt-sm-20">Website SEO friendly</h3>
-                  <p></p>
-                  <p lang="pl" class="lead">Tworząc <b>strony</b> dbamy o to aby były <b>przyjazne dla robotów wyszukiwarki.</b> Doradzimy Ci o jakie elementy zadbać na stronie, aby łatwiej było ją później pozycjonować i aby pojawiała się jeszcze wyżej w wynikach wyszukiwania. </p>
-                  <p lang="en" class="lead">When creating pages, we make sure that they are <strong>friendly to search engine robots.</strong> We will advise you on what elements to take care of on the site so that it is easier to position it later and that it appears even higher in the search results. </p>
-                  <p></p>
-              </div>
+            <div class="desc">
+              <h3 lang="pl" class="font--color--dark--grey text-center pt-sm-20">Strona zoptymalizowana pod wyszukiwarkę</h3>
+              <h3 lang="en" class="font--color--dark--grey text-center pt-sm-20">Website SEO friendly</h3>
+              <p></p>
+              <p lang="pl" class="lead">Tworząc <b>strony</b> dbamy o to aby były <b>przyjazne dla robotów wyszukiwarki.</b> Doradzimy Ci o jakie elementy zadbać na stronie, aby łatwiej było ją później pozycjonować i aby pojawiała się jeszcze wyżej
+                w wynikach wyszukiwania. </p>
+              <p lang="en" class="lead">When creating pages, we make sure that they are <strong>friendly to search engine robots.</strong> We will advise you on what elements to take care of on the site so that it is easier to position it later and
+                that it appears even higher in the search results. </p>
+              <p></p>
+            </div>
           </div>
         </div>
 
-</div>
-</section>
+      </div>
+    </section>
     <!-- End Action Box Section -->
 
 
     <!-- Benefits Section -->
     <section id="offer" class="container-full page-offer-box-desc-points section effect-show-items-1 ptb ptb-sm-80">
-        <div class="container lead">
-            <header class="section-header text-center">
-                <h3 lang="pl" class="font--color--light">Co zyskujesz</h3>
-                 <h3 lang="en" class="font--color--light">Your benefits</h3>
-            </header>
-            <ul class="offer--list font--color--light mt-60 d-flex">
-                <li class="item active">
-                    <i class="far fa-check-square"></i>
-                    <span lang="pl">Darmowa wycena projektu</span>
-                    <span lang="en">Free project quote</span>
+      <div class="container lead">
+        <header class="section-header text-center">
+          <h3 lang="pl" class="font--color--light">Co zyskujesz</h3>
+          <h3 lang="en" class="font--color--light">Your benefits</h3>
+        </header>
+        <ul class="offer--list font--color--light mt-60 d-flex">
+          <li class="item active">
+            <i class="far fa-check-square"></i>
+            <span lang="pl">Darmowa wycena projektu</span>
+            <span lang="en">Free project quote</span>
 
-                </li>
-                <li class="item active">
-                    <i class="far fa-check-square"></i>
-                    <span lang="pl">Darmowa optymalizacja pod kątem SEO</span>
-                    <span lang="en">Free SEO optimization</span>
-                </li>
-                <li class="item active">
-                    <i class="far fa-check-square"></i>
-                    <span lang="pl">Dedykowany projekt graficzny</span>
-                    <span lang="en">Dedicated graphic design</span>
-                </li>
-                <li class="item active">
-                    <i class="far fa-check-square"></i>
-                    <span lang="pl">Dostosowane do urządzeń mobilnych</span>
-                    <span lang="en">Adapted to mobile devices</span>
-                </li>
+          </li>
+          <li class="item active">
+            <i class="far fa-check-square"></i>
+            <span lang="pl">Darmowa optymalizacja pod kątem SEO</span>
+            <span lang="en">Free SEO optimization</span>
+          </li>
+          <li class="item active">
+            <i class="far fa-check-square"></i>
+            <span lang="pl">Dedykowany projekt graficzny</span>
+            <span lang="en">Dedicated graphic design</span>
+          </li>
+          <li class="item active">
+            <i class="far fa-check-square"></i>
+            <span lang="pl">Dostosowane do urządzeń mobilnych</span>
+            <span lang="en">Adapted to mobile devices</span>
+          </li>
 
-                <li class="item active">
-                    <i class="far fa-check-square"></i>
-                    <span lang="pl">Narzędzia statystyczne i analityczne wbudowane w stronę</span>
-                    <span lang="en">Statistical and analytical tools built-in</span>
-                  </li>
-                <li class="item active">
-                    <i class="far fa-check-square"></i>
-                    <span lang="pl">Integracja strony z mediami społecznościowymi</span>
-                    <span lang="en">Website integration with social media</span>
-                </li>
-                <li class="item active">
-                    <i class="far fa-check-square"></i>
-                    <span lang="pl">Doradztwo na każdym etapie tworzenia strony</span>
-                    <span lang="en">Consulting at every stage of website creation</span>
-                </li>
-                <li class="item active">
-                    <i class="far fa-check-square"></i>
-                    <span lang="pl">Możliwość dalszej rozbudowy strony</span>
-                    <span lang="en">The possibility of further expansion of the site</span>
+          <li class="item active">
+            <i class="far fa-check-square"></i>
+            <span lang="pl">Narzędzia statystyczne i analityczne wbudowane w stronę</span>
+            <span lang="en">Statistical and analytical tools built-in</span>
+          </li>
+          <li class="item active">
+            <i class="far fa-check-square"></i>
+            <span lang="pl">Integracja strony z mediami społecznościowymi</span>
+            <span lang="en">Website integration with social media</span>
+          </li>
+          <li class="item active">
+            <i class="far fa-check-square"></i>
+            <span lang="pl">Doradztwo na każdym etapie tworzenia strony</span>
+            <span lang="en">Consulting at every stage of website creation</span>
+          </li>
+          <li class="item active">
+            <i class="far fa-check-square"></i>
+            <span lang="pl">Możliwość dalszej rozbudowy strony</span>
+            <span lang="en">The possibility of further expansion of the site</span>
 
-                </li>
+          </li>
 
-            </ul>
-        </div>
+        </ul>
+      </div>
     </section>
     <!-- End Benefits Section -->
 
@@ -333,62 +356,62 @@
 
           <div class="nf-item branding coffee">
             <div class="item-box">
-                <img class="item-container" src="img/portfolio/tsd-screenshot.png" alt="1" />
-                <div class="item-mask">
-                  <div class="item-caption">
-                    <h5 class="white">Fundacja</h5>
-                    <p class="white">Strona dla fundacji z systemem zarządzania treścią.</p>
-                    <a href="http://dzwiekowy.pl/" title="Strona architekta" target="_blank">
-                      <button class="btn-link-a">Zobacz</button>
-                    </a>
-                  </div>
+              <img class="item-container" src="img/portfolio/tsd-screenshot.png" alt="1" />
+              <div class="item-mask">
+                <div class="item-caption">
+                  <h5 class="white">Fundacja</h5>
+                  <p class="white">Strona dla fundacji z systemem zarządzania treścią.</p>
+                  <a href="http://dzwiekowy.pl/" title="Strona architekta" target="_blank">
+                    <button class="btn-link-a">Zobacz</button>
+                  </a>
                 </div>
+              </div>
             </div>
           </div>
 
           <div class="nf-item branding coffee">
             <div class="item-box">
-                <img class="item-container" src="img/portfolio/andrzej-hypki-screenshot.png" alt="1" />
-                <div class="item-mask">
-                  <div class="item-caption">
-                    <h5 class="white">Portfolio </h5>
-                    <p class="white">Prosta, przejrzysta wizytówka architekta.</p>
-                    <a href="http://andrzejhypki.pl/" title="Strona architekta" target="_blank">
-                      <button class="btn-link-a">Zobacz</button>
-                    </a>
-                  </div>
+              <img class="item-container" src="img/portfolio/andrzej-hypki-screenshot.png" alt="1" />
+              <div class="item-mask">
+                <div class="item-caption">
+                  <h5 class="white">Portfolio </h5>
+                  <p class="white">Prosta, przejrzysta wizytówka architekta.</p>
+                  <a href="http://andrzejhypki.pl/" title="Strona architekta" target="_blank">
+                    <button class="btn-link-a">Zobacz</button>
+                  </a>
                 </div>
+              </div>
             </div>
           </div>
 
 
           <div class="nf-item branding coffee">
             <div class="item-box">
-                <img class="item-container" src="img/portfolio/mitra-screenshot.png" alt="1" />
-                <div class="item-mask">
-                  <div class="item-caption">
-                    <h5 class="white">Firma budowlana</h5>
-                    <p class="white">Strona dla firmy budowlanej z blogiem.</p>
-                    <a href="http://mitraposadzki.pl/" title="Strona architekta" target="_blank">
-                      <button class="btn-link-a">Zobacz</button>
-                    </a>
-                  </div>
+              <img class="item-container" src="img/portfolio/mitra-screenshot.png" alt="1" />
+              <div class="item-mask">
+                <div class="item-caption">
+                  <h5 class="white">Firma budowlana</h5>
+                  <p class="white">Strona dla firmy budowlanej z blogiem.</p>
+                  <a href="http://mitraposadzki.pl/" title="Strona architekta" target="_blank">
+                    <button class="btn-link-a">Zobacz</button>
+                  </a>
                 </div>
+              </div>
             </div>
           </div>
 
           <div class="nf-item branding coffee">
             <div class="item-box">
-                <img class="item-container" src="img/portfolio/protetyk-screenshot.png" alt="1" />
-                <div class="item-mask">
-                  <div class="item-caption">
-                    <h5 class="white">Pracownia protetyczna</h5>
-                    <p class="white">Strona wizytówka dla protetyka szczękowego.</p>
-                    <a href="http://protezy-naprawa-poznan.pl/" title="Strona architekta" target="_blank">
-                      <button class="btn-link-a">Zobacz</button>
-                    </a>
-                  </div>
+              <img class="item-container" src="img/portfolio/protetyk-screenshot.png" alt="1" />
+              <div class="item-mask">
+                <div class="item-caption">
+                  <h5 class="white">Pracownia protetyczna</h5>
+                  <p class="white">Strona wizytówka dla protetyka szczękowego.</p>
+                  <a href="http://protezy-naprawa-poznan.pl/" title="Strona architekta" target="_blank">
+                    <button class="btn-link-a">Zobacz</button>
+                  </a>
                 </div>
+              </div>
             </div>
           </div>
 
@@ -446,7 +469,7 @@
 
     <!-- End Service Section -->
 
- <!--About Section-->
+    <!--About Section-->
     <section id="about" class="wow fadeIn ptb ptb-sm-80">
       <div class="container">
         <div class="row text-center">
@@ -456,36 +479,37 @@
             <div class="spacer-15"></div>
             <p lang="pl" class="lead font--color--dark">Jesteśmy zespołem pasjonatów tworzących nowoczesne, funkcjonalne i responsywne <strong>strony internetowe.</strong>
               Jeśli chcesz być widoczny w sieci, zaprezentować swoją firmę klientom, pozwolić aby łatwo i szybko się z Tobą skontaktowali – napisz lub zadzwoń <strong>do nas.</strong></p>
-            <p lang="en" class="lead font--color--dark">We are a team of enthusiasts who create modern, functional and responsive websites. If you want to be visible on the Internet, present your company to customers and allow them to contact you easily and quickly - write or call us.</p>
+            <p lang="en" class="lead font--color--dark">We are a team of enthusiasts who create modern, functional and responsive websites. If you want to be visible on the Internet, present your company to customers and allow them to contact you
+              easily and quickly - write or call us.</p>
           </div>
           <div class="container d-flex justify-content-center align-items-center">
             <div class="row">
               <div class="col-sm-12 col-md-4 mt-60 d-flex flex-column align-items-center">
-                      <h5 class="h2 font--color--dark">Matylda</h5>
-                      <div class="spacer-15"></div>
-                      <div class="img">
-                              <img src="img/girl.png" alt="Paweł">
-                      </div>
-                      <p class="lead mt-30 font--color--dark">Grafik i marketingowiec. Projektuje doskonałe strony, które Paweł i Patryk zamieniają na kod.</p>
-                  </div>
-              <div class="col-sm-12 col-md-4 mt-60 d-flex flex-column align-items-center">
-                  <h5 class="h2 font--color--dark">Paweł</h5>
-                  <div class="spacer-15"></div>
-                  <div class="img">
-                          <img src="img/man.png" alt="Paweł">
-                  </div>
-                  <p class="lead mt-30 font--color--dark">Web developer. Zadaniowiec i marzyciel czyli zrobi co grafik zaprojektuje ale swoje trzy grosze wtrąci. Ogólnie sympatyczny.</p>
+                <h5 class="h2 font--color--dark">Matylda</h5>
+                <div class="spacer-15"></div>
+                <div class="img">
+                  <img src="img/girl.png" alt="Paweł">
+                </div>
+                <p class="lead mt-30 font--color--dark">Grafik i marketingowiec. Projektuje doskonałe strony, które Paweł i Patryk zamieniają na kod.</p>
               </div>
               <div class="col-sm-12 col-md-4 mt-60 d-flex flex-column align-items-center">
-                  <h5 class="h2 font--color--dark">Patryk</h5>
-                  <div class="spacer-15"></div>
-                  <div class="img">
-                      <img src="img/boy.png" alt="Patryk">
-                  </div>
-                  <p class="lead mt-30 font--color--dark">Web developer i marketingowiec. Doszedł w swoim życiu do takiego etapu, że za 50 zł zrobi wszystko. Da się lubić.</p>
+                <h5 class="h2 font--color--dark">Paweł</h5>
+                <div class="spacer-15"></div>
+                <div class="img">
+                  <img src="img/man.png" alt="Paweł">
+                </div>
+                <p class="lead mt-30 font--color--dark">Web developer. Zadaniowiec i marzyciel czyli zrobi co grafik zaprojektuje ale swoje trzy grosze wtrąci. Ogólnie sympatyczny.</p>
+              </div>
+              <div class="col-sm-12 col-md-4 mt-60 d-flex flex-column align-items-center">
+                <h5 class="h2 font--color--dark">Patryk</h5>
+                <div class="spacer-15"></div>
+                <div class="img">
+                  <img src="img/boy.png" alt="Patryk">
+                </div>
+                <p class="lead mt-30 font--color--dark">Web developer i marketingowiec. Doszedł w swoim życiu do takiego etapu, że za 50 zł zrobi wszystko. Da się lubić.</p>
               </div>
             </div>
-        </div>
+          </div>
 
     </section>
     <!-- End About Section-->
@@ -494,39 +518,39 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4 text-center">
-              <div class="contact-icon-left">
-                  <i class="fas fa-map-marker-alt"></i>
-              </div>
-              <h6 lang="pl">Adres</h6>
-              <h6 lang="en">Address</h6>
-              <p lang="pl">
-                TailoredWebs, Poznań, Polska.
-              </p>
-              <p lang="en">
-                TailoredWebs, Poznań, Poland.
-              </p>
+            <div class="contact-icon-left">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <h6 lang="pl">Adres</h6>
+            <h6 lang="en">Address</h6>
+            <p lang="pl">
+              TailoredWebs, Poznań, Polska.
+            </p>
+            <p lang="en">
+              TailoredWebs, Poznań, Poland.
+            </p>
           </div>
-        </hr>
+          </hr>
           <div class="col-md-4 text-center pt-sm-30">
-              <div class="contact-icon-left">
-                  <i class="fas fa-phone"></i>
-              </div>
-              <h6 lang="pl">Zadzwoń do nas</h6>
-              <h6 lang="en">Call us</h6>
-              <p>
-                <span><a href="tel:+48668336781">+48 668 336 781</a></span><br />
-                <span><a href="tel:+48507008812">+48 507 008 812</a></span><br />
-              </p>
+            <div class="contact-icon-left">
+              <i class="fas fa-phone"></i>
+            </div>
+            <h6 lang="pl">Zadzwoń do nas</h6>
+            <h6 lang="en">Call us</h6>
+            <p>
+              <span><a href="tel:+48668336781">+48 668 336 781</a></span><br />
+              <span><a href="tel:+48507008812">+48 507 008 812</a></span><br />
+            </p>
           </div>
-        </hr>
+          </hr>
           <div class="col-md-4 text-center pt-sm-30">
-              <div class="contact-icon-left">
-                  <i class="fas fa-envelope-open-text"></i>
-              </div>
-              <h6>Email</h6>
-              <p>
-                <a href="mailto:contact@tailoredwebs.pl">contact@tailoredwebs.pl</a>
-              </p>
+            <div class="contact-icon-left">
+              <i class="fas fa-envelope-open-text"></i>
+            </div>
+            <h6>Email</h6>
+            <p>
+              <a href="mailto:contact@tailoredwebs.pl">contact@tailoredwebs.pl</a>
+            </p>
           </div>
 
         </div>
