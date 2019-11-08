@@ -3,7 +3,7 @@
 @import url("./plugin/mediaelementplayer.css");
 @import url("./plugin/colorbox.css");
 @import url("./plugin/jquery.fs.tipper.css");
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap&subset=latin-ext');
+
 
 
 
@@ -294,10 +294,10 @@ p {
 h1, h2, h3, h4, h5, h6 {
     color: #323232;
     text-transform: uppercase;
-    /* font-family: 'Raleway', sans-serif; */
     font-weight: 600;
     margin-top: 0px;
     margin-bottom: 10px;
+    font-family: 'Exo 2', sans-serif;
 }
 
 h1 {
@@ -307,7 +307,7 @@ h1 {
 }
 
     h1.h1, h2.h2 {
-
+        font-family: 'Exo 2', sans-serif;
         letter-spacing: 15px;
         font-size: 4rem;
         line-height: 4rem;
@@ -317,7 +317,7 @@ h1 {
     .title-1st-word {
         color: #D3D3D3;
         border: 2px solid #d3d3d3;
-    
+        box-sizing: border-box;
     }
 
     .grid-container {
@@ -392,7 +392,7 @@ h1.large {
     font-size: 12px;
     line-height: normal;
     font-weight: 600;
-    /* font-family: 'Raleway', sans-serif; */
+    
     letter-spacing: 1px;
     text-align: center;
     text-transform: uppercase;
@@ -586,7 +586,7 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
 }
 
 button, input, textarea, select {
-    /* font-family: 'Raleway', sans-serif; */
+    
     font-size: 12px;
 }
 
@@ -610,7 +610,6 @@ button, input, textarea, select {
 
 input, textarea, select {
     margin-bottom: 20px;
-    /* font-family: 'Raleway', sans-serif; */
     font-size: 12px;
 }
 
@@ -629,7 +628,7 @@ label {
     padding-right: 3px;
     margin-top: 6px;
     font-weight: 600;
-    /* font-family: 'Raleway', sans-serif; */
+    
     display: block;
 }
 
@@ -2152,35 +2151,6 @@ form label.error {
     }
 }
 
-/*------------------------------------------------------------------*/
-/* Slider */
-/*------------------------------------------------------------------*/
-
-.sc-logo {
-    /*margin-top: 0px;
-    margin-bottom:0;*/
-    text-align: center;
-}
-
-.sc-title {
-    font-weight: 800;
-    text-align: center;
-    /*margin-top: 0px;
-    margin-bottom:0;*/
-}
-
-.sc-paragraph-lead {
-    font-family: Georgia;
-    font-style: italic;
-    font-size: 20px;
-    text-align: center;
-    /*margin-top: 0px;
-    margin-bottom:0;*/
-}
-
-.sc-button {
-}
-
 
 /*==============================================================================================*/
 /* FOOTER         ||---------------------------- */
@@ -2197,13 +2167,14 @@ form label.error {
     padding-top:30px;
     padding-bottom:30px;
 }
-    .footer hr {
-        border-color: #eee;
-    }
 
-    .footer .footer-info p {
-        color: #323232;
-    }
+.footer hr {
+    border-color: #eee;
+}
+
+.footer .footer-info p {
+    color: #323232;
+}
 
 .footer-logo {
     max-width: 125px;
@@ -2230,10 +2201,10 @@ form label.error {
     margin-bottom:5px;
 }
 
-    .footer ul.social li, .contact ul.social li {
-        display: inline-block;
-        margin: 0 10px 0 0;
-    }
+.footer ul.social li, .contact ul.social li {
+    display: inline-block;
+    margin: 0 10px 0 0;
+}
 
 .footer .link a {
     font-size: 14px;
@@ -4475,10 +4446,10 @@ img[src*="poland"] {
 }
 
 /* Form CSS */
-@import url('https://fonts.googleapis.com/css?family=Prompt:400,700&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Exo+2:400,700&display=swap&subset=latin-ext');
 
 html {
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Exo 2', sans-serif;
     
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -4649,7 +4620,7 @@ textarea {
   color: #474544;
   cursor: pointer;
   display: inline-block;
-  /* font-family: 'Helvetica', Arial, sans-serif; */
+
   font-size: 0.875em;
   font-weight: bold;
   outline: none;
@@ -4731,6 +4702,8 @@ h1, h1.h1{
 /* ABOUT US Start */
 #about{
     background-color: #f9f9f9;
+    /* background: url("../img/full/aboutUsphoto1.jpg") no-repeat center center;
+    background-size: cover; */
 }
 
 .desc h3::after{
@@ -4812,6 +4785,10 @@ h1, h1.h1{
 
 a#flag-pl{
     color: red;
+}
+
+a#flag-en{
+    color: rgba(255,255,255,1);
 }
 
 /* Mobile NAV end */
