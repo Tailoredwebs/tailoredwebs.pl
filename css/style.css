@@ -317,7 +317,7 @@ h1 {
     .title-1st-word {
         color: #D3D3D3;
         border: 2px solid #d3d3d3;
-    
+
     }
 
     .grid-container {
@@ -539,7 +539,7 @@ button {
     }
 
 .btn-link-a, .btn-link-b {
-    color: #323232;
+    color: #eee7ea;
     background: none;
     padding-left: 0px;
     padding-right: 0px;
@@ -2120,7 +2120,7 @@ form label.error {
     overflow: hidden;
     position: relative;
     width: 100%;
-    
+
     /*background-attachment: fixed;*/
 }
 
@@ -3625,14 +3625,11 @@ form label.error {
     position: relative;
     overflow: hidden;
     display: block;
-    max-height: 220px;
+    max-height: 400px;
 }
 
     .item-box a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding-top: 15px;
+        display: inline-block;
     }
 
     .item-box:hover .item-mask {
@@ -4479,7 +4476,7 @@ img[src*="poland"] {
 
 html {
     font-family: 'Prompt', sans-serif;
-    
+
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -4722,7 +4719,7 @@ h1, h1.h1{
         font-size: 2rem;
         line-height: 3rem;
     }
-    
+
 }
 
 .no--after h3::after{
@@ -4759,7 +4756,7 @@ h1, h1.h1{
 }
 
 .offer--list{
-   
+
     padding: 0;
     display: -webkit-box;
     display: -ms-flexbox;
