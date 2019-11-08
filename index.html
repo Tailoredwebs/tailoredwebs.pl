@@ -146,56 +146,49 @@
         </div>
         <div class="container">
           <form class="contact-form" id="contact" role="form">
-            <!-- IF MAIL SENT SUCCESSFULLY -->
-            <h6 lang="en" class="successContent">
-              <i class="fa fa-check left" style="color: #5cb45d;"></i>Your message has been sent successfully.
-            </h6>
-            <h6 lang="pl" class="successContent">
-              <i class="fa fa-check left" style="color: #5cb45d;"></i>Twoja wiadomość została wysłana.
-            </h6>
-            <!-- END IF MAIL SENT SUCCESSFULLY -->
+            <div lang="en" class="col-md-12 text-center">
+              <h6 class="successContent">
+                <i class="fa fa-check left" style="color: #5cb45d;"></i>Your message has been sent successfully.
+              </h6>
+              <h6 class="errorContent">
+                <i class="fa fa-exclamation-circle left" style="color: #e1534f;"></i>There was a problem validating the form please check!
+              </h6>
+            </div>
+            <div lang="pl" class="col-md-12 text-center">
+              <h6 class="successContent">
+                <i class="fa fa-check left" style="color: #5cb45d;"></i>Twoja wiadomość została wysłana.
+              </h6>
+              <h6 class="errorContent">
+                <i class="fa fa-exclamation-circle left" style="color: #e1534f;"></i>Wystąpił błąd. Sprawdź wprowadzone dane.
+              </h6>
+            </div>
 
-            <!-- MAIL SENDING UNSUCCESSFULL -->
-            <h6 lang="en" class="errorContent">
-              <i class="fa fa-exclamation-circle left" style="color: #e1534f;"></i>There was a problem validating the form please check!
-            </h6>
-            <h6 lang="pl" class="errorContent">
-              <i class="fa fa-exclamation-circle left" style="color: #e1534f;"></i>Wystąpił błąd. Sprawdź wprowadzone dane.
-            </h6>
-            <!-- END MAIL SENDING UNSUCCESSFULL -->
             <div class="name pull-left">
-              <label for="name"></label>
               <input lang="pl" type="text" placeholder="Twoje imię" name="name" id="form-name" required>
               <input lang="en" type="text" placeholder="Your Name" name="name" id="form-name" required>
             </div>
             <div class="email pull-right">
-              <label for="email"></label>
               <input lang="pl" type="email" placeholder="Twój mail" name="email" id="form-email" required>
               <input lang="en" type="email" placeholder="Your Email" name="email" id="form-email" required>
             </div>
             <div class="company--name pull-left">
-              <label for="company"></label>
               <input lang="pl" type="text" placeholder="Nazwa Twojej firmy" name="name" id="form-company" required>
               <input lang="en" type="text" placeholder="Your Company Name" name="name" id="form-company" required>
 
             </div>
             <div class="company--website pull-right">
-              <label for="website"></label>
               <input lang="pl" type="text" placeholder="Link do Twojej strony" name="name" id="form-website" required>
               <input lang="en" type="text" placeholder="Your Company Website" name="name" id="form-website" required>
             </div>
             <div class="company--phone pull-left">
-              <label for="phone"></label>
               <input lang="pl" type="text" placeholder="Numer telefonu - Oddzwonimy" name="telephone" id="form-phone" required>
               <input lang="en" type="text" placeholder="Your Phone - We will call you ASAP" name="telephone" id="form-phone" required>
             </div>
             <div class="service--time--limit pull-right">
-              <label for="term"></label>
               <input lang="pl" type="text" placeholder="Termin realizacji" name="telephone" id="form-time" required>
               <input lang="en" type="text" placeholder="Lead Time" name="telephone" id="form-time" required>
             </div>
             <div class="message">
-              <label for="message"></label>
               <textarea lang="pl" name="textarea" placeholder="Czy masz jakieś dodatkowe wskazówki np. linki do stron konkurencji, preferowana kolorystyka itd.)" id="form-message" cols="30" rows="5" required></textarea>
               <textarea lang="en" name="textarea" placeholder="Do you have any additional clues? Don't hesitate to write us" id="form-message" cols="30" rows="5" required></textarea>
             </div>
