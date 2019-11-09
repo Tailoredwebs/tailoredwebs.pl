@@ -4813,3 +4813,13 @@ a#flag-pl{
 }
 
 /* Mobile NAV end */
+
+section h3 {
+font-size: 40px;
+line-height: 44px;
+}
+
+#action-box h3 {
+    font-size: 32px;
+    line-height: 36px;
+}
