@@ -4819,6 +4819,16 @@ line-height: 44px;
 }
 
 #action-box h3 {
-    font-size: 32px;
-    line-height: 36px;
+    font-size: 2rem;
+    line-height: 2.25rem;
+}
+
+/* SLIDER start */
+
+.carousel-inner{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: 70%;
 }
