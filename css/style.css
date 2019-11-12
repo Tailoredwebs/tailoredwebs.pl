@@ -4832,3 +4832,14 @@ line-height: 44px;
     margin: 0 auto;
     max-width: 70%;
 }
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    /* width: 40px;
+    height: 40px; */
+    background: none;
+}
+
+.carousel-control-prev-icon i, .carousel-control-next-icon i {
+    font-size: 40px;
+    color: #999;
+}
