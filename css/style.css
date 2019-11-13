@@ -2,6 +2,8 @@
 @import url("./plugin/owl.carousel.css");
 @import url("./plugin/mediaelementplayer.css");
 @import url("./plugin/colorbox.css");
+@import url("./main.css");
+@import url("./util.css");
 @import url("./plugin/jquery.fs.tipper.css");
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap&subset=latin-ext');
 
@@ -4727,7 +4729,7 @@ h1, h1.h1{
 }
 /* ABOUT US Start */
 #about{
-    background-color: #f9f9f9;
+    /* background-color: #f9f9f9; */
 }
 
 .desc h3::after{
@@ -4737,22 +4739,27 @@ h1, h1.h1{
 
 
 
-/* ACTION-BOXUS Start */
+/* ACTION-BOX Start */
 #action-box{
-    background-color: #f9f9f9;
+    /* background-color: #f9f9f9; */
+}
+
+.action-box--inner, .about-box--inner{
+    background-color: #f2f2f2;
+    padding: 40px;
 }
 /* ACTION-BOX End */
 
 
 /* WORK start */
 #work{
-    background-color: #f9f9f9;
+    
 }
 /* WORK end */
 
 /* OFFER start */
 #offer{
-    background-color: #222;
+    background-color: #242582;
 }
 
 .offer--list{
@@ -4772,7 +4779,13 @@ h1, h1.h1{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    font-weight: bold;
 }
+
+.offer--list li i{
+    font-weight: bold;
+}
+
 .offer--list li span {
    text-align: left;
 }
@@ -4794,7 +4807,7 @@ h1, h1.h1{
 
 /* SERVICE start */
 #service{
-    background-color: #222;
+    background-color: #242582;
 }
 /* SERVICE end */
 
