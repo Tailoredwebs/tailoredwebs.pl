@@ -104,7 +104,7 @@
     <section id="intro" class="dark-bg">
 
       <!-- Intro Canvas Pattern -->
-      <div class="intro-media-wraper bg-image overlay-dark parallax parallax-section1" data-background-img="img/full/view.jpg">
+      <div class="intro-media-wraper bg-image overlay-dark parallax parallax-section1" data-background-img="images/bg-registration-form-7.jpg">
 
         <!-- Canvas Pattern -->
         <canvas id="pollyfill-canvas"></canvas>
@@ -115,26 +115,43 @@
       <!-- Caption Section -->
       <div class="intro-overlay-section">
         <div class="js-fullscreen-height intro-caption-top container">
-          <div class="intro-content">
-            <div class="intro-content-inner subtitle">
-              <h1 lang="pl" class="h1">Jesteśmy po </br> Twojej<span class="title-1st-word">stronie</span></h1>
-              <h1 lang="en" class="h1">We're on </br> Your<span class="title-1st-word">site</span></h1>
-              <h2>Słuchamy Rozumiemy Budujemy</h2>
-              <br>
-              <div class="showPL singlepage-nav"><a href="#form-section" class="btn btn-md btn-white">Zbudujmy razem Twoją stronę</a>
+          <div class="intro-content d-flex flex-column justify-content-center align-items-center">
+            <div class="container d-flex justify-content-center align-items-start pl-0 pr-0">
+              <div class="row intro-content-left d-flex flex-column align-items-end justify-content-center col-md-8">
+                <h1 lang="pl" class="h1 font--color--light">Jesteśmy po </br> Twojej<span class="h1 title-1st-word"><span>stronie</span></span></h1>
+                <h1 lang="en" class="h1">We're on </br> Your<span class="title-1st-word d-flex justify-content-center align-items-center"><span>site</span></span></h1>
               </div>
-              <div class="showEN singlepage-nav"><a href="#form-section" class="btn btn-md btn-white">Let's create your website together</a>
+              <div class="row intro-content-right col-10 col-md-4"> 
+                  <h2 class="font--color--light d-flex flex-column"><span>Słuchamy</span><span>Rozumiemy</span><span>Budujemy</span></h2>
+              </div>
+            </div>
+            <div class="container d-flex align-items-center justify-content-center pt-60">
+              <div class="row d-flex align-items-center col-10 col-md-8">
+                <p lang="pl" class="lead font--color--light">Jesteśmy zespołem pasjonatów tworzących nowoczesne, funkcjonalne i responsywne <strong>strony internetowe.</strong>
+                  Jeśli chcesz być widoczny w sieci, zaprezentować swoją firmę klientom, pozwolić aby łatwo i szybko się z Tobą skontaktowali – napisz lub zadzwoń <strong>do nas.</strong>
+                </p>
+                <p lang="en" class="lead font--color--light">We are... zespołem pasjonatów tworzących nowoczesne, funkcjonalne i responsywne <strong>strony internetowe.</strong>
+                  Jeśli chcesz być widoczny w sieci, zaprezentować swoją firmę klientom, pozwolić aby łatwo i szybko się z Tobą skontaktowali – napisz lub zadzwoń <strong>do nas.</strong>
+                </p>
+              </div>
+            </div>
+            <div class="container">
+              <div class="showPL singlepage-nav"><a href="#form-section"><button>Porozmawiajmy</button></a>
+              </div>
+              <div class="showEN singlepage-nav"><a href="#form-section">Let's create your website together</a>
               </div>
             </div>
           </div>
+        </div>
+      </div>
           <!-- End Caption Section -->
     </section>
     <!-- End Intro Section -->
 
     <!-- Contact Section -->
-    <!-- <section id="form-section" class="ptb-80 ptb-sm-80">
+    <section id="form-section" class="wow fadeInLeft pt-80 ptb-sm-80">
       <div class="container">
-        <div class="row subtitle no--after">
+        <!-- <div class="row subtitle no--after">
           <h3 class="h3 text-center" lang="pl">Porozmawiajmy</h3>
           <h3 class="h3 text-center" lang="en">Your website in a shortcut</h3>
           <h4 class="h3 text-center" lang="pl">Skontakuj się z nami - przygotujemy projekt Twojej strony</h4>
@@ -202,24 +219,50 @@
               </div>
             </div>
           </form> 
-        </div>
+        </div> -->
+        <div class="form-wrapper">
+            <div class="inner">
+              <form action="">
+                <h3 class="form-title">Porozmawiajmy</h3>
+                <h4 class="font--color--light text-center pb-60">Skontakuj się z nami - przygotujemy projekt Twojej strony</h4>
+                <label class="form-group">
+                  <input type="text" class="form-control-inner"  required>
+                  <span>Twoje imię</span>
+                  <span class="border"></span>
+                </label>
+                <label class="form-group">
+                  <input type="text" class="form-control-inner"  required>
+                  <span for="">Twój e-mail</span>
+                  <span class="border"></span>
+                </label>
+                <label class="form-group" >
+                  <textarea name="" id="" class="form-control-inner" required></textarea>
+                  <span for="">Twoja wiadomość</span>
+                  <span class="border"></span>
+                </label>
+                <button>Wyślij 
+                  
+                </button>
+              </form>
+            </div>
+          </div>
       </div>
 
       
-    </section> -->
+    </section>
     <!-- Contact Section -->
 
     <!-- Action Box Section -->
     <section id="action-box" class="ptb-80 ptb-sm-80">
-      <div class="container action-box--inner">
+      <div class="container action-box--inner fadeInLeft">
 
         <div class="row item active justify-content-center align-items-center">
-          <div class="col-sm-10 col-md-6">
+          <div class="col-sm-10 col-md-6 plr-20">
             <div class="img">
               <img src="img/website.jpg" alt="Projektowanie stron internetowych">
             </div>
           </div>
-          <div class="col-sm-10 col-md-6">
+          <div class="col-sm-10 col-md-6 plr-20">
             <div class="desc">
               <h3 lang="pl" class="font--color--dark--grey text-center pt-sm-20">Strona internetowa skrojona na miarę</h3>
               <h3 lang="en" class="font--color--dark--grey text-center pt-sm-20">Tailored website</h3>
@@ -233,7 +276,7 @@
           </div>
         </div>
         <div class="row item active justify-content-center align-items-center mtb-60">
-          <div class=" col-sm-10 col-md-6 order-2 order-md-1">
+          <div class="col-sm-10 col-md-6 order-2 order-md-1 ptb-15">
             <div class="desc">
               <h3 lang="pl" class="font--color--dark--grey text-center pt-sm-20">Responsywna strona internetowa</h3>
               <h3 lang="en" class="font--color--dark--grey text-center pt-sm-20">Responsive Web Design</h3>
@@ -245,19 +288,19 @@
               <p></p>
             </div>
           </div>
-          <div class="col-sm-10 col-md-6 order-1 order-md-2">
+          <div class="col-sm-10 col-md-6 order-1 order-md-2 ptb-15">
             <div class="img">
               <img src="img/mobile2.png" alt="Projektowanie stron internetowych">
             </div>
           </div>
         </div>
         <div class="row item active justify-content-center align-items-center">
-          <div class="col-sm-10 col-md-6">
+          <div class="col-sm-10 col-md-6 ptb-15">
             <div class="img">
               <img src="img/seo.png" alt="Projektowanie stron internetowych">
             </div>
           </div>
-          <div class="col-sm-10 col-md-6">
+          <div class="col-sm-10 col-md-6 ptb-15">
             <div class="desc">
               <h3 lang="pl" class="font--color--dark--grey text-center pt-sm-20">Strona zoptymalizowana pod wyszukiwarkę</h3>
               <h3 lang="en" class="font--color--dark--grey text-center pt-sm-20">Website SEO friendly</h3>
@@ -278,7 +321,7 @@
 
     <!-- Benefits Section -->
     <section id="offer" class="container-full page-offer-box-desc-points section effect-show-items-1 ptb-80 ptb-sm-80">
-      <div class="container lead">
+      <div class="container">
         <header class="section-header text-center">
           <h3 lang="pl" class="font--color--light">Co zyskujesz</h3>
           <h3 lang="en" class="font--color--light">Your benefits</h3>
@@ -429,10 +472,10 @@
                 <img class="item-container" src="img/portfolio/tsd-mockup.png" alt="1" />
                 <div class="item-mask">
                   <div class="item-caption">
-                    <h5 class="white">Fundacja</h5>
+                    <h4 class="white">Fundacja</h4>
                     <p class="white">Strona dla fundacji z systemem zarządzania treścią.</p>
                     <a href="http://dzwiekowy.pl/" title="Strona architekta" target="_blank">
-                      <button class="btn-link-a">Zobacz</button>
+                      <button>Zobacz</button>
                     </a>
                   </div>
                 </div>
@@ -444,10 +487,10 @@
                 <img class="item-container" src="img/portfolio/hypki-mockup.png" alt="1" />
                 <div class="item-mask">
                   <div class="item-caption">
-                    <h5 class="white">Portfolio </h5>
+                    <h4 class="white">Portfolio </h4>
                     <p class="white">Prosta, przejrzysta wizytówka architekta.</p>
                     <a href="http://andrzejhypki.pl/" title="Strona architekta" target="_blank">
-                      <button class="btn-link-a">Zobacz</button>
+                      <button>Zobacz</button>
                     </a>
                   </div>
                 </div>
@@ -459,10 +502,10 @@
                 <img class="item-container" src="img/portfolio/mitra-mockup.png" alt="1" />
                 <div class="item-mask">
                   <div class="item-caption">
-                    <h5 class="white">Firma budowlana</h5>
+                    <h4 class="white">Firma budowlana</h4>
                     <p class="white">Strona dla firmy budowlanej z blogiem.</p>
                     <a href="http://mitraposadzki.pl/" title="Strona architekta" target="_blank">
-                      <button class="btn-link-a">Zobacz</button>
+                      <button>Zobacz</button>
                     </a>
                   </div>
                 </div>
@@ -474,10 +517,10 @@
                 <img class="item-container" src="img/portfolio/protezy- mockup.png" alt="1" />
                 <div class="item-mask">
                   <div class="item-caption">
-                    <h5 class="white">Pracownia protetyczna</h5>
+                    <h4 class="white">Pracownia protetyczna</h4>
                     <p class="white">Strona wizytówka dla protetyka szczękowego.</p>
                     <a href="http://protezy-naprawa-poznan.pl/" title="Strona architekta" target="_blank">
-                      <button class="btn-link-a">Zobacz</button>
+                      <button>Zobacz</button>
                     </a>
                   </div>
                 </div>
@@ -543,7 +586,7 @@
     <!-- End Service Section -->
 
     <!--About Section-->
-    <section id="about" class="wow fadeIn ptb-80 ptb-sm-80">
+    <section id="about" class="wow fadeInLeft ptb-80 ptb-sm-80">
       <div class="container about-box--inner">
         <div class="row text-center">
           <div class="col-md-8 offset-md-2">
@@ -559,7 +602,7 @@
           <div class="container d-flex justify-content-center align-items-center">
             <div class="row">
               <div class="col-sm-12 col-md-4 mt-60 d-flex flex-column align-items-center">
-                <h5 class="h2 font--color--dark">Matylda</h5>
+                <h5 class="h2 font--color--dark--grey">Matylda</h5>
                 <div class="spacer-15"></div>
                 <div class="img">
                   <img src="img/girl.png" alt="Paweł">
@@ -567,7 +610,7 @@
                 <p class="lead mt-30 font--color--dark">Grafik i marketingowiec. Projektuje doskonałe strony, które Paweł i Patryk zamieniają na kod.</p>
               </div>
               <div class="col-sm-12 col-md-4 mt-60 d-flex flex-column align-items-center">
-                <h5 class="h2 font--color--dark">Paweł</h5>
+                <h5 class="h2 font--color--dark--grey">Paweł</h5>
                 <div class="spacer-15"></div>
                 <div class="img">
                   <img src="img/man.png" alt="Paweł">
@@ -575,7 +618,7 @@
                 <p class="lead mt-30 font--color--dark">Web developer. Zadaniowiec i marzyciel czyli zrobi co grafik zaprojektuje ale swoje trzy grosze wtrąci. Ogólnie sympatyczny.</p>
               </div>
               <div class="col-sm-12 col-md-4 mt-60 d-flex flex-column align-items-center">
-                <h5 class="h2 font--color--dark">Patryk</h5>
+                <h5 class="h2 font--color--dark--grey">Patryk</h5>
                 <div class="spacer-15"></div>
                 <div class="img">
                   <img src="img/boy.png" alt="Patryk">
