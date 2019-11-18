@@ -2,8 +2,6 @@
 @import url("./plugin/owl.carousel.css");
 @import url("./plugin/mediaelementplayer.css");
 @import url("./plugin/colorbox.css");
-@import url("./main.css");
-@import url("./util.css");
 @import url("./plugin/jquery.fs.tipper.css");
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap&subset=latin-ext');
 
@@ -131,6 +129,11 @@ img {
 	}
   #mobile {
     display: block;
+  }
+
+  .intro-content-left {
+      border: none;
+      flex-wrap: wrap;
   }
 }
 
@@ -4698,9 +4701,9 @@ h1, h1.h1{
 /* ACTION-BOX End */
 
 
-/* WORK start */
-#work{
-
+/* Process start */
+#process{
+    background-color: #034093;
 }
 /* WORK end */
 
@@ -4761,7 +4764,7 @@ h1, h1.h1{
 
 /* SERVICE start */
 #service{
-    background-color: #034093;
+    /* background-color: #034093; */
 }
 /* SERVICE end */
 
