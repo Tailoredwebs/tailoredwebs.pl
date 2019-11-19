@@ -2616,8 +2616,16 @@ form label.error {
 .page-icon-top {
     font-size: 70px;
     line-height: 70px;
-    padding-bottom: 20px;
-    width: 100%;
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    /* padding-bottom: 20px; */
+    border: 1px solid #f2f2f2;
+    margin: 10px;
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #323232;
     transition: all 1s ease-in-out;
 }
@@ -4661,13 +4669,7 @@ h1, h1.h1{
 
 /* ABOUT US Start */
 #about{
-<<<<<<< HEAD
-    background-color: #f9f9f9;
-    /* background: url("../img/full/aboutUsphoto1.jpg") no-repeat center center;
-    background-size: cover; */
-=======
     /* background-color: #f9f9f9; */
->>>>>>> master
 }
 
 .desc h3::after{
@@ -4691,13 +4693,13 @@ h1, h1.h1{
 
 /* Process start */
 #process{
-    background-color: #034093;
+    background-color: #215D86
 }
 /* WORK end */
 
 /* OFFER start */
 #offer{
-    background-color: #034093;
+    background-color: #215D86;
 }
 
 .container-full .container:first-child {
@@ -4761,6 +4763,26 @@ h1, h1.h1{
     display: none;
 }
 
+#contact-info{
+    position: relative;
+    height: 100%;
+    
+}
+
+#contact-info::after {
+    content: "";
+    background: url("../img/we.jpg") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  }
+
 .showPL{
    display: block;
 }
@@ -4769,13 +4791,6 @@ a#flag-pl{
     color: red;
 }
 
-<<<<<<< HEAD
-a#flag-en{
-    color: rgba(255,255,255,1);
-}
-
-/* Mobile NAV end */
-=======
 /* Mobile NAV end */
 
 section h3 {
@@ -4862,8 +4877,7 @@ line-height: 44px;
     max-width: 960px;
     width: 100%;
     margin: auto;
-    background: #39459b;
-    /* border: 10px solid #0d99d7; */
+    background: #215D86;
     padding: 77px 99px 87px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
     -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
@@ -5008,9 +5022,8 @@ line-height: 44px;
       -o-box-shadow: none; }
 
     .form-wrapper {
-      background: #39459b;
-      border: 10px solid #0d99d7; } }
+      background: #167396;
+     } }
 
 
   /*# sourceMappingURL=style.css.map */
->>>>>>> master
