@@ -4772,7 +4772,7 @@ h1, h1.h1{
 
 /* SERVICE start */
 #service{
-    background-color: #034093;
+    /* background-color: #034093; */
 }
 /* SERVICE end */
 
@@ -4785,6 +4785,10 @@ h1, h1.h1{
     position: relative;
     height: 100%;
     
+}
+
+#process {
+    background-color: #215D86
 }
 
 #contact-info::after {
