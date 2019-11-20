@@ -4681,7 +4681,7 @@ h1, h1.h1{
 
 /* ACTION-BOX Start */
 #action-box{
-    background-color: #f9f9f9;
+    background-color: #f2f2f2;
 }
 
 .action-box--inner, .about-box--inner{
@@ -4694,6 +4694,11 @@ h1, h1.h1{
 /* Process start */
 #process{
     background-color: #215D86
+}
+
+/* WORK start */
+#work{
+    background-color: #f2f2f2;
 }
 /* WORK end */
 
@@ -4754,7 +4759,7 @@ h1, h1.h1{
 
 /* SERVICE start */
 #service{
-    /* background-color: #034093; */
+    background-color: #f2f2f2;
 }
 /* SERVICE end */
 
