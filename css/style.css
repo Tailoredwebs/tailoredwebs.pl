@@ -3,11 +3,7 @@
 @import url("./plugin/mediaelementplayer.css");
 @import url("./plugin/colorbox.css");
 @import url("./plugin/jquery.fs.tipper.css");
-<<<<<<< HEAD
-
-=======
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap&subset=latin-ext');
->>>>>>> master
 
 
 
@@ -133,11 +129,6 @@ img {
 	}
   #mobile {
     display: block;
-  }
-
-  .intro-content-left {
-      border: none;
-      flex-wrap: wrap;
   }
 }
 
@@ -2204,6 +2195,35 @@ form label.error {
     }
 }
 
+/*------------------------------------------------------------------*/
+/* Slider */
+/*------------------------------------------------------------------*/
+
+.sc-logo {
+    /*margin-top: 0px;
+    margin-bottom:0;*/
+    text-align: center;
+}
+
+.sc-title {
+    font-weight: 800;
+    text-align: center;
+    /*margin-top: 0px;
+    margin-bottom:0;*/
+}
+
+.sc-paragraph-lead {
+    font-family: Georgia;
+    font-style: italic;
+    font-size: 20px;
+    text-align: center;
+    /*margin-top: 0px;
+    margin-bottom:0;*/
+}
+
+.sc-button {
+}
+
 
 /*==============================================================================================*/
 /* FOOTER         ||---------------------------- */
@@ -2220,14 +2240,13 @@ form label.error {
     padding-top:30px;
     padding-bottom:30px;
 }
+    .footer hr {
+        border-color: #eee;
+    }
 
-.footer hr {
-    border-color: #eee;
-}
-
-.footer .footer-info p {
-    color: #323232;
-}
+    .footer .footer-info p {
+        color: #323232;
+    }
 
 .footer-logo {
     max-width: 125px;
@@ -2254,10 +2273,10 @@ form label.error {
     margin-bottom:5px;
 }
 
-.footer ul.social li, .contact ul.social li {
-    display: inline-block;
-    margin: 0 10px 0 0;
-}
+    .footer ul.social li, .contact ul.social li {
+        display: inline-block;
+        margin: 0 10px 0 0;
+    }
 
 .footer .link a {
     font-size: 14px;
@@ -4401,15 +4420,10 @@ img[src*="poland"] {
 }
 
 /* Form CSS */
-@import url('https://fonts.googleapis.com/css?family=Exo+2:400,700&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Prompt:400,700&display=swap&subset=latin-ext');
 
 html {
-<<<<<<< HEAD
-    font-family: 'Exo 2', sans-serif;
-    
-=======
     font-family: 'Montserrat', sans-serif;
->>>>>>> master
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -4695,14 +4709,9 @@ h1, h1.h1{
 /* ACTION-BOX End */
 
 
-/* Process start */
-#process{
-    background-color: #215D86
-}
-
 /* WORK start */
 #work{
-    background-color: #f2f2f2;
+
 }
 /* WORK end */
 
@@ -4763,7 +4772,7 @@ h1, h1.h1{
 
 /* SERVICE start */
 #service{
-    background-color: #f2f2f2;
+    background-color: #034093;
 }
 /* SERVICE end */
 
