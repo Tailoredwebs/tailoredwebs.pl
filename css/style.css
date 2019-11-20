@@ -4699,7 +4699,7 @@ h1, h1.h1{
 
 /* ACTION-BOX Start */
 #action-box{
-    background-color: #f2f2f2;
+    /* background-color: #f2f2f2; */
 }
 
 .action-box--inner, .about-box--inner{
@@ -4790,6 +4790,13 @@ h1, h1.h1{
 #process {
     background-color: #215D86
 }
+
+.process-icon img {
+    filter: brightness(0) invert(1);
+    border: 1px solid #fff;
+    padding: 15px;
+}
+
 
 #contact-info::after {
     content: "";
