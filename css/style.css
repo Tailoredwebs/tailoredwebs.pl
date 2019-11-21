@@ -3185,7 +3185,7 @@ form label.error {
 
 
 .nf-row2 .nf-item.spacing, .nf-item.spacing, .nf-row2 .grid-sizer.spacing, .spacing-box {
-    padding: 10px;
+    /* padding: 10px; */
 }
 
 .spacing-grid {
@@ -3532,7 +3532,6 @@ form label.error {
     overflow: hidden;
     display: block;
     border: 5px solid #fff;
-    border-top: 10px solid #fff;
 }
 
     .item-box a {
