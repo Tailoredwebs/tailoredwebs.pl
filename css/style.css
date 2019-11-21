@@ -2501,7 +2501,7 @@ form label.error {
 
 /* FORM BRIEF Start */
 #form-section {
-    background-color: #215D86;
+    /* background-color: #215D86; */
 }
 
 .subtitle i {
@@ -4679,7 +4679,7 @@ h1, h1.h1{
 
 .action-box--inner, .about-box--inner{
     /* background-color: #f2f2f2; */
-    padding: 40px;
+    /* padding: 40px; */
 }
 /* ACTION-BOX End */
 
