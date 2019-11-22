@@ -691,6 +691,7 @@ form label.error {
     display: none;
     text-transform: none;
     letter-spacing: 1px;
+    color: white;
 }
 
 .pull-left {
