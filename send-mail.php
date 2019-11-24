@@ -22,9 +22,6 @@ $message = $_POST['message'];
 
 $body = <<<EMAIL
 
-Imię: $name
-Email: $email
-
 Wiadomość: $message
 
 Od : $name
