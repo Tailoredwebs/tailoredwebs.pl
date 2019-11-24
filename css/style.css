@@ -5150,6 +5150,10 @@ h1, h1.h1{
     display: none;
 }
 
+#contact{
+    transform: skew(0, -2deg);
+}
+
 #contact-info{
     position: relative;
     height: 100%;
@@ -5279,9 +5283,7 @@ line-height: 38px;
     outline: none; }
 
   .form-wrapper {
-    /* min-height: 100vh;
-    display: flex;
-    align-items: center; */
+   transform: skew(0, 2deg);
    }
 
   .inner {
