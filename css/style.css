@@ -934,7 +934,7 @@ button {
     }
 
 .btn-link-a, .btn-link-b {
-    color: #eee7ea;
+    color: #fff;
     background: none;
     padding-left: 0px;
     padding-right: 0px;
@@ -947,7 +947,7 @@ button {
 }
 
     .btn-link-a:hover {
-        color: #e6ae49;
+        color: #fff;
         /* border-bottom: 1px solid #e6ae49; */
     }
 
@@ -2986,8 +2986,8 @@ form label.error {
 /* Icon          ||---------------------------- */
 /*-------------------------------------------------------------------------------------------*/
 .page-icon-top {
-    font-size: 70px;
-    line-height: 70px;
+    font-size: 72px;
+    line-height: 72px;
     width: 100px;
     height: 100px;
     padding: 20px;
@@ -3004,10 +3004,16 @@ form label.error {
 
 .page-icon-top i {
     transition: all .3s ease-out;
+    padding: 15px;
 }
 
+
 .page-icon-top:hover i {
-    transform: scale(0.9)
+    transform: scale(1.1)
+}
+
+.page-icon-top ~ h5{
+    margin: 0;
 }
 
 .white .page-icon-top, .white .page-icon-left, .white .features-icon-left, .white .features-icon-right {
