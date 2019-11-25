@@ -4594,6 +4594,7 @@ ul.project-detail-block, .project-detail-block ul {
 
         #preloader .loader .loader-img {
             background: url("../img/loading.GIF");
+            background-size: contain;
             width: 60px;
             height: 60px;
             display: block;
