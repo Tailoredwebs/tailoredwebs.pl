@@ -3944,7 +3944,8 @@ form label.error {
 .item-box-desc {
     height: 50px;
     background: #215D86;
-    color: #f2f2f2;
+    font-weight: 500;
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
