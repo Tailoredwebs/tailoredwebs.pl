@@ -3916,7 +3916,7 @@ form label.error {
     position: relative;
     overflow: hidden;
     display: block;
-    border: 5px solid #fff;
+   
 }
 
     .item-box a {
@@ -3940,6 +3940,18 @@ form label.error {
         transition: all 2s cubic-bezier(0.23, 1, 0.32, 1) 0s;
         width: 100%;
     }
+
+.item-box-desc {
+    height: 50px;
+    background: #215D86;
+    color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nf-item {
+    border: 5px solid transparent;
+}
 
 .item-container {
     transform: scale(1);
@@ -3994,6 +4006,7 @@ form label.error {
         position: absolute;
         bottom: -100px;
         left: 0px;
+        width: 100%;
         padding-left: 30px;
         padding-right: 30px;
         text-align: left;
@@ -5151,7 +5164,7 @@ h1, h1.h1{
 }
 
 #contact{
-    transform: skew(0, -2deg);
+    /* transform: skew(0, -2deg); */
 }
 
 #contact-info{
@@ -5283,7 +5296,7 @@ line-height: 38px;
     outline: none; }
 
   .form-wrapper {
-   transform: skew(0, 2deg);
+   /* transform: skew(0, 2deg); */
    }
 
   .inner {
