@@ -438,7 +438,7 @@ select:-webkit-autofill:focus {
 }
 
 .font--color--light{
-    color: #f2f2f2;
+    color: #fff;
 }
 
 .font--color--dark--grey{
@@ -2457,7 +2457,7 @@ form label.error {
 }
 
 .intro-content-left{
-    border-right: 5px solid #f2f2f2;
+    border-right: 5px solid #fff;
     margin: 0;
 }
 
@@ -2886,7 +2886,7 @@ form label.error {
 
 /* FORM BRIEF Start */
 #form-section {
-    /* background-color: #215D86; */
+    /* background-color: rgb(113, 132, 165); */
 }
 
 .subtitle i {
@@ -2992,7 +2992,7 @@ form label.error {
     height: 100px;
     padding: 20px;
     /* padding-bottom: 20px; */
-    border: 1px solid #f2f2f2;
+    border: 1px solid #fff;
     margin: 10px;
     /* width: 100%; */
     display: flex;
@@ -3397,11 +3397,11 @@ form label.error {
     }
 
     .overlay-dark:before {
-        background-color: rgba(32,32,32,0.4);
+        background-color: rgba(113, 132, 165,0.6);
     }
 
     .overlay-dark80:before {
-        background-color: rgba(32,32,32,0.8);
+        background-color: rgba(113, 132, 165,0.6);
     }
 
     .overlay-light:before {
@@ -3949,7 +3949,7 @@ form label.error {
 
 .item-box-desc {
     height: 50px;
-    background: #215D86;
+    background: rgb(113, 132, 165);
     font-weight: 500;
     color: #fff;
     display: flex;
@@ -5101,7 +5101,7 @@ h1, h1.h1{
 
 /* OFFER start */
 #offer{
-    background-color: #215D86;
+    background-color: rgb(113, 132, 165);
     transform: skew(0, 2deg)
 }
 
@@ -5182,7 +5182,7 @@ h1, h1.h1{
 }
 
 #process {
-    background-color: #215D86;
+    background-color: rgb(113, 132, 165);
     transform: skew(0,2deg);
 }
 
@@ -5311,7 +5311,7 @@ line-height: 38px;
     max-width: 960px;
     width: 100%;
     margin: auto;
-    background: #215D86;
+    background: rgb(113, 132, 165);
     padding: 77px 99px 87px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
     -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
@@ -5330,7 +5330,7 @@ line-height: 38px;
     margin-bottom: 12px; } */
   .form-title {
       text-align: center;
-      color: #f2f2f2;
+      color: #fff;
   }
 
   .form-title p {
@@ -5348,7 +5348,7 @@ line-height: 38px;
 
     .form-group span {
       font-size: 15px;
-      color: #f2f2f2;
+      color: #ffff;
       position: absolute;
       top: 11px;
       transition: all .2s ease;
@@ -5369,7 +5369,7 @@ line-height: 38px;
 
   .form-control-inner {
     border: none;
-    border-bottom: 2px solid #f2f2f2;
+    border-bottom: 2px solid #fff;
     display: block;
     width: 100%;
     height: 43px;
@@ -5379,7 +5379,7 @@ line-height: 38px;
 }
 
     .form-control-inner:focus, .form-control-inner:valid {
-      border-bottom: 2px solid #f2f2f2; }
+      border-bottom: 2px solid #fff; }
 
     .form-control-inner:focus + span, .form-control-inner:valid + span {
         transform: translateY(-22px) scale(0.8); }
