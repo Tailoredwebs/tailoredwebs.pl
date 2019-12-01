@@ -1,16 +1,4 @@
-﻿@import url("./plugin/flexslider.css");
-@import url("./plugin/owl.carousel.css");
-@import url("./plugin/mediaelementplayer.css");
-@import url("./plugin/colorbox.css");
-@import url("./plugin/jquery.fs.tipper.css");
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap&subset=latin-ext');
-
-
-
-/* Normalize CSS */
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
-
-/* Document
+﻿/* Document
    ========================================================================== */
 
 /**
@@ -31,6 +19,7 @@
    */
   
   body {
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
   }
   
@@ -4798,7 +4787,6 @@ img[src*="poland"] {
 @import url('https://fonts.googleapis.com/css?family=Prompt:400,700&display=swap&subset=latin-ext');
 
 html {
-    font-family: 'Montserrat', sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -5262,15 +5250,6 @@ line-height: 38px;
 
 
 /* FORM ----------------------------------------------------------------------*/
-@font-face {
-    font-family: "Montserrat-Regular";
-    src: url("../fonts/Montserrat/Montserrat-Regular.ttf"); }
-  @font-face {
-    font-family: "Montserrat-Bold";
-    src: url("../fonts/Montserrat/Montserrat-Bold.ttf"); }
-  @font-face {
-    font-family: "Montserrat-SemiBold";
-    src: url("../fonts/Montserrat/Montserrat-SemiBold.ttf"); }
   * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -5458,6 +5437,3 @@ line-height: 38px;
     .form-wrapper {
       background: #167396;
      } }
-
-
-  /*# sourceMappingURL=style.css.map */
