@@ -1,0 +1,46 @@
+{
+  "name": "tailoredwebs.pl",
+  "version": "1.0.0",
+  "description": "Strony i sklepy internetowe szyte na miare",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tailoredwebs/tailoredwebs.pl.git"
+  },
+  "author": "tailoredwebs.pl",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tailoredwebs/tailoredwebs.pl/issues"
+  },
+  "homepage": "https://github.com/Tailoredwebs/tailoredwebs.pl#readme",
+  "devDependencies": {
+    "autoprefixer": "^8.4.1",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "copy-webpack-plugin": "^4.5.2",
+    "css-loader": "^0.28.11",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^3.2.0",
+    "image-webpack-loader": "^6.0.0",
+    "json-server": "^0.14.0",
+    "mini-css-extract-plugin": "^0.4.1",
+    "node-sass": "^4.9.0",
+    "postcss-loader": "^2.1.5",
+    "react-social-icons": "^3.0.0",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.1",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "dependencies": {
+    "jquery": "^3.4.1"
+  }
+}
