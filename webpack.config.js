@@ -95,6 +95,10 @@ module.exports = function (env) {
                     from: './src/js/plugin',
                     to: 'js/plugin'
                 },
+                {
+                    from: './src/send-mail.php',
+                    to: './send-mail.php'
+                },
             ])
 
         ]
