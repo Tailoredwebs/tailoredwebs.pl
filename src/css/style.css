@@ -751,7 +751,7 @@ h3 {
 }
 
     h3:after {
-        color: #e6ae49;
+        color: #4F87B5;
         content: ".";
         font-size: 34px;
     }
@@ -1863,7 +1863,7 @@ form label.error {
 
 /*Onepage Nav*/
 .fixed a.current {
-    color: #e6ae49 !important;
+    color: #3898D1 !important;
 }
 
 .header--sticky.fixed.sticky--on .header-nav {
@@ -5183,7 +5183,7 @@ h1, h1.h1{
 }
 
 a#flag-pl{
-    color: red;
+    color: #3898D1;
 }
 
 /* Mobile NAV end */
