@@ -1,4 +1,8 @@
-﻿/* Document
+﻿@import url("./plugin/mediaelementplayer.css");
+@import url("./plugin/colorbox.css");
+@import url("./plugin/jquery.fs.tipper.css");
+
+/* Document
    ========================================================================== */
 
 /**
@@ -1091,7 +1095,6 @@ form label.error {
     width: 20%;
     height: 2px;
     background-color: #323232;
-    transform: skew(0, 2deg);
     margin: 10px 0;
 } */
 
@@ -4841,10 +4844,6 @@ h1 {
     color: #474544;
 }
 
-#form-message {
-    padding-top: 60px;
-}
-
 .underline {
   border-bottom: solid 2px #474544;
   margin: -0.512em auto;
@@ -5090,16 +5089,6 @@ h1, h1.h1{
 /* OFFER start */
 #offer{
     background-color: rgb(113, 132, 165);
-    transform: skew(0, 2deg)
-}
-
-.container-full .container:first-child {
-
-
-}
-
-#offer .section-header {
-    transform: skew(0, -2deg)
 }
 
 .offer--list{
@@ -5114,7 +5103,6 @@ h1, h1.h1{
     font-weight: 400;
     line-height: 24px;
     text-align: justify;
-    transform: skew(0, -2deg)
 }
 
 .offer--list li{
@@ -5159,10 +5147,6 @@ h1, h1.h1{
     display: none;
 }
 
-#contact{
-    /* transform: skew(0, -2deg); */
-}
-
 #contact-info{
     position: relative;
     height: 100%;
@@ -5171,12 +5155,6 @@ h1, h1.h1{
 
 #process {
     background-color: rgb(113, 132, 165);
-    transform: skew(0,2deg);
-}
-
-
-#process h3, #process h4, #process .spacer-60, #process .container {
-    transform: skew(0, -2deg);
 }
 
 .process-icon img {
@@ -5281,10 +5259,6 @@ line-height: 38px;
 
   :focus {
     outline: none; }
-
-  .form-wrapper {
-   /* transform: skew(0, 2deg); */
-   }
 
   .inner {
     max-width: 960px;

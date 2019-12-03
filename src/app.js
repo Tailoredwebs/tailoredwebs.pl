@@ -4,7 +4,7 @@ import './js/contact-form.js';
 import './js/plugin/wow.min.js';
 
 // CSS
-import './css/style.css'
+import './css/main.scss'
 
 //  Onepage Nav Elements
 $('.singlepage-nav').singlePageNav({
