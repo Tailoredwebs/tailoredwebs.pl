@@ -15,6 +15,13 @@ module.exports = function (env) {
             path: path.resolve(__dirname, "docs")
         },
         mode: isDev ? 'development' : 'production',
+        // webpack-dev-server configuration
+  devServer: {
+    contentBase: path.resolve(__dirname, "./"),
+    watchContentBase: true,
+    compress: true,
+    port: 8080
+  },
         module: {
             rules: [{
                     test: /\.jsx$/,
@@ -94,6 +101,18 @@ module.exports = function (env) {
                 {
                     from: './src/js/plugin',
                     to: 'js/plugin'
+                },
+                {
+                    from: './src/fonts',
+                    to: 'fonts'
+                },
+                {
+                    from: './src/css/plugin',
+                    to: 'css/plugin'
+                },
+                {
+                    from: './src/media',
+                    to: 'media'
                 },
                 {
                     from: './src/send-mail.php',
