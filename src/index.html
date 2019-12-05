@@ -38,7 +38,7 @@
   <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
   <link rel="icon" type="image/png" href="img/favicon.png">
   <link rel="apple-touch-icon" href="img/favicon.png">
-<link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap" rel="stylesheet">
   <link href="app.css" rel="stylesheet" type="text/css" />
 </head>
 
@@ -709,8 +709,6 @@
 
 
   <!-- JS -->
-
-
   <script src="js/plugin/jquery-1.11.2.min.js" type="text/javascript"></script>
   <script src="js/plugin/jquery.easing.js" type="text/javascript"></script>
   <script src="js/plugin/jquery-ui.min.js" type="text/javascript"></script>
@@ -731,9 +729,29 @@
   <script src="js/plugin/TweenLite.min.js" type="text/javascript"></script>
   <script src="js/plugin/EasePack.min.js" type="text/javascript"></script>
   <script src="js/plugin/pollyfill.js" type="text/javascript"></script>
-  <script src="js/plugin/jquery-simple-multi-lang.js" type="text/javascript"></script> -->
+  <script src="js/plugin/jquery-simple-multi-lang.js" type="text/javascript"></script>
   <script src="out.js" type="text/javascript"></script>
-
+  
+  <script>
+    //  Onepage Nav Elements
+    $('.singlepage-nav').singlePageNav({
+      offset: 0,
+      filter: ':not(.external)',
+      updateHash: true,
+      currentClass: 'current',
+      easing: 'swing',
+      speed: 750,
+      beforeStart: function () {
+        if ($(window).width() < 991) {
+          $('.menu-mobile-btn').removeClass('active');
+          $('.nav-menu').removeClass('show-on-mobile');
+        };
+      },
+      onComplete: function () {
+        console.log('done scrolling');
+      }
+    });
+  </script>
 </body>
 
 </html>
