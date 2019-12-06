@@ -24,7 +24,7 @@
   <meta property="og:title" content="Jesteśmy po Twojej Stronie" />
   <meta property="og:description"
     content="Zespół pasjonatów tworzących nowoczesne, funkcjonalne i responsywne strony internetowe." />
-  <meta property="og:image" content="http://tailoredwebs.pl/img/about-us-icon.png" />
+  <meta property="og:image" content="http://tailoredwebs.pl/img/we.jpg" />
   <title>Tailoredwebs - digital agency</title>
   <meta name="description"
     content="Jesteśmy zespołem pasjonatów tworzących nowoczesne, funkcjonalne i responsywne strony internetowe. Jeśli chcesz być widoczny w sieci, zaprezentować swoją firmę klientom, pozwolić aby łatwo i szybko się z Tobą skontaktowali napisz lub zadzwoń do nas." />
@@ -38,9 +38,14 @@
   <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
   <link rel="icon" type="image/png" href="img/favicon.png">
   <link rel="apple-touch-icon" href="img/favicon.png">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
-  <link href="app.css" rel="stylesheet" type="text/css" />
-<link href="app.css" rel="stylesheet"></head>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap" rel="stylesheet">
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
+  <link href="css/ionicons.css" rel="stylesheet" type="text/css" />
+  <link href="css/plugin/animate.css" rel="stylesheet" type="text/css" />
+  <link href="css/jquery-ui.css" rel="stylesheet" type="text/css" />
+  <link href="css/plugin/YTPlayer.css" rel="stylesheet" type="text/css" /><link href="app.css" rel="stylesheet"></head>
 
 <body>
 
@@ -709,11 +714,11 @@
 
 
   <!-- JS -->
-
-
-  <script src="js/plugin/jquery-1.11.2.min.js" type="text/javascript"></script>
+  <script src="out.js" type="text/javascript"></script>
+  <script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
   <script src="js/plugin/jquery.easing.js" type="text/javascript"></script>
-  <script src="js/plugin/jquery-ui.min.js" type="text/javascript"></script>
+  <script src="js/jquery-ui.min.js" type="text/javascript"></script>
+  <script src="js/bootstrap.min.js" type="text/javascript"></script>
   <script src="js/plugin/jquery.flexslider.js" type="text/javascript"></script>
   <script src="js/plugin/jquery.fitvids.js" type="text/javascript"></script>
   <script src="js/plugin/jquery.viewportchecker.js" type="text/javascript"></script>
@@ -722,18 +727,41 @@
   <script src="js/plugin/jquery.colorbox-min.js" type="text/javascript"></script>
   <script src="js/plugin/owl.carousel.min.js" type="text/javascript"></script>
   <script src="js/plugin/isotope.pkgd.min.js" type="text/javascript"></script>
+  <script src="js/plugin/masonry.pkgd.min.js" type="text/javascript"></script>
   <script src="js/plugin/imagesloaded.pkgd.min.js" type="text/javascript"></script>
   <script src="js/plugin/jquery.fs.tipper.min.js" type="text/javascript"></script>
   <script src="js/plugin/mediaelement-and-player.min.js"></script>
   <script src="js/plugin/jquery.validate.min.js" type="text/javascript"></script>
+  <script src="js/theme.js" type="text/javascript"></script>
   <script src="js/plugin/jquery.mb.YTPlayer.min.js" type="text/javascript"></script>
   <script src="js/plugin/jquery.singlePageNav.js" type="text/javascript"></script>
+  <script src="js/contact-form.js" type="text/javascript"></script>
   <script src="js/plugin/TweenLite.min.js" type="text/javascript"></script>
   <script src="js/plugin/EasePack.min.js" type="text/javascript"></script>
   <script src="js/plugin/pollyfill.js" type="text/javascript"></script>
-  <script src="js/plugin/jquery-simple-multi-lang.js" type="text/javascript"></script> -->
-  <script src="out.js" type="text/javascript"></script>
+  <script src="js/plugin/jquery-simple-multi-lang.js" type="text/javascript"></script>
+  
 
+  <script type="text/javascript">
+      //  Onepage Nav Elements
+      $('.singlepage-nav').singlePageNav({
+          offset: 0,
+          filter: ':not(.external)',
+          updateHash: true,
+          currentClass: 'current',
+          easing: 'swing',
+          speed: 750,
+          beforeStart: function () {
+              if ($(window).width() < 991) {
+                  $('.menu-mobile-btn').removeClass('active');
+                  $('.nav-menu').removeClass('show-on-mobile');
+              };
+          },
+          onComplete: function () {
+              console.log('done scrolling');
+          }
+      });
+  </script>
 <script type="text/javascript" src="out.js"></script></body>
 
 </html>

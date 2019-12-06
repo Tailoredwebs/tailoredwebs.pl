@@ -9951,7 +9951,7 @@ div.mejs-speed-button {
         .cboxIframe{background:#fff;}
         #cboxError{padding:50px; border:1px solid #ccc;}
         #cboxLoadedContent{background:rgba(0,0,0,0); padding:1px;}
-        #cboxLoadingGraphic{background:url(d5c02aa6c461a18d08978be560c78740.GIF) no-repeat center center;}
+        #cboxLoadingGraphic{background:url(2825e6e29ba05f90e899525c82c0927c.GIF) no-repeat center center;}
         #cboxLoadingOverlay{background:rgba(0,0,0,0);}
         #cboxTitle{position:absolute; top:-22px; left:0; color:#323232; font-weight:600;}
         #cboxCurrent{position:absolute; top:-22px; right:205px; text-indent:-9999px;}
@@ -10575,8 +10575,8 @@ img {
 
 .photo-shaddow {
     -webkit-box-shadow: 0px 9px 12px 0px rgba(50, 50, 50, 0.75);
--moz-box-shadow:    0px 9px 12px 0px rgba(50, 50, 50, 0.75);
-box-shadow:         0px 9px 12px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px 9px 12px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         0px 9px 12px 0px rgba(50, 50, 50, 0.75);
 }
 
 a, a:focus, a:active, a:link, img {
@@ -10830,7 +10830,7 @@ h3 {
 }
 
     h3:after {
-        color: #e6ae49;
+        color: #4F87B5;
         content: ".";
         font-size: 34px;
     }
@@ -11942,7 +11942,7 @@ form label.error {
 
 /*Onepage Nav*/
 .fixed a.current {
-    color: #e6ae49 !important;
+    color: #3898D1 !important;
 }
 
 .header--sticky.fixed.sticky--on .header-nav {
@@ -14665,15 +14665,16 @@ ul.project-detail-block, .project-detail-block ul {
         position: absolute;
         left: 50%;
         top: 50%;
-        margin: -30px 0 0 -30px;
+        margin: -30px 0 0 -50px;
         text-align: center;
     }
 
         #preloader .loader .loader-img {
-            background: url(d5c02aa6c461a18d08978be560c78740.GIF);
+            background: url(2825e6e29ba05f90e899525c82c0927c.GIF);
             background-size: contain;
-            width: 60px;
-            height: 60px;
+            background-repeat: no-repeat;
+            width: 150px;
+            height: 150px;
             display: block;
         }
 
@@ -15261,7 +15262,7 @@ h1, h1.h1{
 }
 
 a#flag-pl{
-    color: red;
+    color: #3898D1;
 }
 
 /* Mobile NAV end */

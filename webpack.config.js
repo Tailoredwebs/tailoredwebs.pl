@@ -99,16 +99,16 @@ module.exports = function (env) {
                     to: 'img'
                 },
                 {
-                    from: './src/js/plugin',
-                    to: 'js/plugin'
+                    from: './src/js',
+                    to: 'js'
                 },
                 {
                     from: './src/fonts',
                     to: 'fonts'
                 },
                 {
-                    from: './src/css/plugin',
-                    to: 'css/plugin'
+                    from: './src/css',
+                    to: 'css'
                 },
                 {
                     from: './src/media',
