@@ -4586,15 +4586,16 @@ ul.project-detail-block, .project-detail-block ul {
         position: absolute;
         left: 50%;
         top: 50%;
-        margin: -30px 0 0 -30px;
+        margin: -30px 0 0 -50px;
         text-align: center;
     }
 
         #preloader .loader .loader-img {
             background: url("../img/loading.GIF");
             background-size: contain;
-            width: 60px;
-            height: 60px;
+            background-repeat: no-repeat;
+            width: 150px;
+            height: 150px;
             display: block;
         }
 
