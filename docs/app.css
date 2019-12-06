@@ -9094,13 +9094,13 @@ a.text-dark:hover, a.text-dark:focus {
 	width: 100px;
 	height: 100px;
 	margin: -50px 0 0 -50px;
-	background: url(716436fb3df0d29e6b37dd62d952676a.png) no-repeat;
+	background: url(some-virtual-location716436fb3df0d29e6b37dd62d952676a.png) no-repeat;
     background-position: 0 -100px ;
     
 }
 
 .no-svg .mejs-overlay-button {
-	background-image: url(716436fb3df0d29e6b37dd62d952676a.png);
+	background-image: url(some-virtual-location716436fb3df0d29e6b37dd62d952676a.png);
     background-position: 0 -100px ;
 }
 
@@ -9124,7 +9124,7 @@ a.text-dark:hover, a.text-dark:focus {
 	display: block;
 	width: 80px;
 	height: 80px;
-	background: transparent url(76b326f4d44222126fee21076595bef5.gif) 50% 50% no-repeat;
+	background: transparent url(some-virtual-location76b326f4d44222126fee21076595bef5.gif) 50% 50% no-repeat;
 }
 
 /* End: LAYERS */
@@ -9170,11 +9170,11 @@ a.text-dark:hover, a.text-dark:focus {
 	height: 16px;
 	width: 16px;
 	border: 0;
-	background: transparent url(fc6d0063b25e4a0db5a39fedce871aae.png) no-repeat;
+	background: transparent url(some-virtual-locationfc6d0063b25e4a0db5a39fedce871aae.png) no-repeat;
 }
 
 .no-svg .mejs-controls .mejs-button button {
-	background-image: url(fc6d0063b25e4a0db5a39fedce871aae.png);
+	background-image: url(some-virtual-locationfc6d0063b25e4a0db5a39fedce871aae.png);
 }
 
 /* :focus for accessibility */
@@ -9383,7 +9383,7 @@ a.text-dark:hover, a.text-dark:focus {
 	display: none;
 	height: 115px;
 	width: 25px;
-	background: url(703c659e4bf563a05c6338a1727e006c.png);
+	background: url(some-virtual-location703c659e4bf563a05c6338a1727e006c.png);
 	background: rgba(50, 50, 50, 0.7);
 	-webkit-border-radius: 0;
 	-moz-border-radius: 0;
@@ -9500,7 +9500,7 @@ a.text-dark:hover, a.text-dark:focus {
 	right: -51px;
 	width: 85px;
 	height: 100px;
-	background: url(703c659e4bf563a05c6338a1727e006c.png);
+	background: url(some-virtual-location703c659e4bf563a05c6338a1727e006c.png);
 	background: rgba(50,50,50,0.7);
 	border: solid 1px transparent;
 	padding: 10px 10px 0 10px;
@@ -9656,7 +9656,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .mejs-captions-text {
 	padding: 3px 5px;
-	background: url(703c659e4bf563a05c6338a1727e006c.png);
+	background: url(some-virtual-location703c659e4bf563a05c6338a1727e006c.png);
 	background: rgba(20, 20, 20, 0.5);
 	white-space: pre-wrap;
 }
@@ -9753,7 +9753,7 @@ a.text-dark:hover, a.text-dark:focus {
 	right: -10px;
 	width: 130px;
 	height: 100px;
-	background: url(703c659e4bf563a05c6338a1727e006c.png);
+	background: url(some-virtual-location703c659e4bf563a05c6338a1727e006c.png);
 	background: rgba(50,50,50,0.7);
 	border: solid 1px transparent;
 	padding: 10px;
@@ -9803,7 +9803,7 @@ a.text-dark:hover, a.text-dark:focus {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: url(703c659e4bf563a05c6338a1727e006c.png);
+	background: url(some-virtual-location703c659e4bf563a05c6338a1727e006c.png);
 	background: rgba(50,50,50,0.7);
 	z-index: 1000;
 	overflow: hidden;
@@ -9816,7 +9816,7 @@ a.text-dark:hover, a.text-dark:focus {
 	position: absolute;
 	right: 0;
 	top: 0;
-	background: url(703c659e4bf563a05c6338a1727e006c.png);
+	background: url(some-virtual-location703c659e4bf563a05c6338a1727e006c.png);
 	background: rgba(50,50,50,0.7);
 	color: #fff;
 	padding: 4px;
@@ -9847,7 +9847,7 @@ div.mejs-speed-button {
 	left: -10px;
 	width: 60px;
 	height: 100px;
-	background: url(703c659e4bf563a05c6338a1727e006c.png);
+	background: url(some-virtual-location703c659e4bf563a05c6338a1727e006c.png);
 	background: rgba(50, 50, 50, 0.7);
 	border: solid 1px transparent;
 	padding: 0;
@@ -9910,7 +9910,7 @@ div.mejs-speed-button {
 /* Start: Skip Back */
 
 .mejs-controls .mejs-button.mejs-skip-back-button {
-	background: transparent url(cd6dc830eb45b3a5a96bbc936ff54846.png) no-repeat;
+	background: transparent url(some-virtual-locationcd6dc830eb45b3a5a96bbc936ff54846.png) no-repeat;
 	background-position: 3px 3px;
 }
 .mejs-controls .mejs-button.mejs-skip-back-button button {
@@ -9951,13 +9951,13 @@ div.mejs-speed-button {
         .cboxIframe{background:#fff;}
         #cboxError{padding:50px; border:1px solid #ccc;}
         #cboxLoadedContent{background:rgba(0,0,0,0); padding:1px;}
-        #cboxLoadingGraphic{background:url(2825e6e29ba05f90e899525c82c0927c.GIF) no-repeat center center;}
+        #cboxLoadingGraphic{background:url(some-virtual-location2825e6e29ba05f90e899525c82c0927c.GIF) no-repeat center center;}
         #cboxLoadingOverlay{background:rgba(0,0,0,0);}
         #cboxTitle{position:absolute; top:-22px; left:0; color:#323232; font-weight:600;}
         #cboxCurrent{position:absolute; top:-22px; right:205px; text-indent:-9999px;}
 
         /* these elements are buttons, and may need to have additional styles reset to avoid unwanted base styles */
-        #cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose {border:0; padding:0; margin:0; overflow:visible; text-indent:-9999px; width:20px; height:20px; position:absolute; top:-20px; background:url(ace48756f4799305ae30e1167e0ff1f9.png) no-repeat 0 0;}
+        #cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose {border:0; padding:0; margin:0; overflow:visible; text-indent:-9999px; width:20px; height:20px; position:absolute; top:-20px; background:url(some-virtual-locationace48756f4799305ae30e1167e0ff1f9.png) no-repeat 0 0;}
         
         /* avoid outlines on :active (mouseclick), but preserve outlines on :focus (tabbed navigating) */
         #cboxPrevious:active, #cboxNext:active, #cboxSlideshow:active, #cboxClose:active {outline:0;}
@@ -14670,7 +14670,7 @@ ul.project-detail-block, .project-detail-block ul {
     }
 
         #preloader .loader .loader-img {
-            background: url(2825e6e29ba05f90e899525c82c0927c.GIF);
+            background: url(some-virtual-location2825e6e29ba05f90e899525c82c0927c.GIF);
             background-size: contain;
             background-repeat: no-repeat;
             width: 150px;
@@ -15245,7 +15245,7 @@ h1, h1.h1{
 
 #contact-info::after {
     content: "";
-    background: url(0605a8a1ffa2c486fc0f34ccdf32f528.jpg) no-repeat center center;
+    background: url(some-virtual-location0605a8a1ffa2c486fc0f34ccdf32f528.jpg) no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
     opacity: 0.3;
@@ -23049,7 +23049,7 @@ readers do not read off random characters that represent icons */
   font-weight: normal;
   font-display: auto;
   src: url(fonts/fa-brands-400.eot);
-  src: url(fonts/fa-brands-400.eot?#iefix) format("embedded-opentype"), url(fonts/fa-brands-400.woff2) format("woff2"), url(fonts/fa-brands-400.woff) format("woff"), url(fonts/fa-brands-400.ttf) format("truetype"), url(a9c4bb7348f42626454c988dbde1d0a0.svg#fontawesome) format("svg"); }
+  src: url(fonts/fa-brands-400.eot?#iefix) format("embedded-opentype"), url(fonts/fa-brands-400.woff2) format("woff2"), url(fonts/fa-brands-400.woff) format("woff"), url(fonts/fa-brands-400.ttf) format("truetype"), url(some-virtual-locationa9c4bb7348f42626454c988dbde1d0a0.svg#fontawesome) format("svg"); }
 
 .fab {
   font-family: 'Font Awesome 5 Brands'; }
@@ -23059,7 +23059,7 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
   font-display: auto;
   src: url(fonts/fa-regular-400.eot);
-  src: url(fonts/fa-regular-400.eot?#iefix) format("embedded-opentype"), url(fonts/fa-regular-400.woff2) format("woff2"), url(fonts/fa-regular-400.woff) format("woff"), url(fonts/fa-regular-400.ttf) format("truetype"), url(7b9568e6389b1f8ae0902cd39665fc1e.svg#fontawesome) format("svg"); }
+  src: url(fonts/fa-regular-400.eot?#iefix) format("embedded-opentype"), url(fonts/fa-regular-400.woff2) format("woff2"), url(fonts/fa-regular-400.woff) format("woff"), url(fonts/fa-regular-400.ttf) format("truetype"), url(some-virtual-location7b9568e6389b1f8ae0902cd39665fc1e.svg#fontawesome) format("svg"); }
 
 .far {
   font-family: 'Font Awesome 5 Free';
@@ -23070,7 +23070,7 @@ readers do not read off random characters that represent icons */
   font-weight: 900;
   font-display: auto;
   src: url(fonts/fa-solid-900.eot);
-  src: url(fonts/fa-solid-900.eot?#iefix) format("embedded-opentype"), url(fonts/fa-solid-900.woff2) format("woff2"), url(fonts/fa-solid-900.woff) format("woff"), url(fonts/fa-solid-900.ttf) format("truetype"), url(c2801fb415f03c7b170934769d7b5397.svg#fontawesome) format("svg"); }
+  src: url(fonts/fa-solid-900.eot?#iefix) format("embedded-opentype"), url(fonts/fa-solid-900.woff2) format("woff2"), url(fonts/fa-solid-900.woff) format("woff"), url(fonts/fa-solid-900.ttf) format("truetype"), url(some-virtual-locationc2801fb415f03c7b170934769d7b5397.svg#fontawesome) format("svg"); }
 
 .fa,
 .fas {

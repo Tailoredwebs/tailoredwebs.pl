@@ -12,7 +12,8 @@ module.exports = function (env) {
         entry: "./src/app.js",
         output: {
             filename: "out.js",
-            path: path.resolve(__dirname, "docs")
+            publicPath: 'some-virtual-location',
+            // path: path.resolve(__dirname, "docs")
         },
         mode: isDev ? 'development' : 'production',
         // webpack-dev-server configuration
