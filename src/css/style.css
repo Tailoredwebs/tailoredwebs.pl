@@ -756,6 +756,10 @@ h3 {
         font-size: 34px;
     }
 
+.section-header h3:after, #process h3:after {
+    color: #fff;
+}
+
 h4 {
     font-size: 17px;
     letter-spacing: 2px;
@@ -3941,12 +3945,10 @@ form label.error {
 
 .item-box-desc {
     height: 50px;
+    line-height: 50px;
     background: rgb(113, 132, 165);
     font-weight: 500;
     color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .nf-item {
     border: 5px solid transparent;

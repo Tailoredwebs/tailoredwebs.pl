@@ -12,13 +12,12 @@ module.exports = function (env) {
         entry: "./src/app.js",
         output: {
             filename: "out.js",
-            publicPath: 'some-virtual-location',
-            // path: path.resolve(__dirname, "docs")
+            path: path.resolve(__dirname, "docs")
         },
         mode: isDev ? 'development' : 'production',
         // webpack-dev-server configuration
   devServer: {
-    contentBase: path.resolve(__dirname, "./"),
+    contentBase: path.resolve(__dirname, "./src"),
     watchContentBase: true,
     compress: true,
     port: 8080
