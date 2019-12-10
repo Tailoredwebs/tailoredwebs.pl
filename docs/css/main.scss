@@ -1,4 +1,11 @@
 @import 'bootstrap.css';
 @import 'style.css';
 @import './plugin/animate.css';
-@import '../../node_modules/@fortawesome/fontawesome-free/css/all.css'
+@import '../../node_modules/@fortawesome/fontawesome-free/css/all.css';
+
+.nf-item {
+    .item-box-desc {
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+}
