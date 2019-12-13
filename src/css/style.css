@@ -2921,6 +2921,7 @@ form label.error {
 
 .contact-icon-left ~ p, .contact-icon-left span {
     color: #fff;
+    font-size: 13px;
 }
 
 .row-contact {
