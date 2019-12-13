@@ -1170,6 +1170,10 @@ form label.error {
     padding-bottom: 110px;
 }
 
+.pb-30 {
+    padding-bottom: 30px;
+}
+
 .ptb-15 {
     padding-top: 15px;
     padding-bottom: 15px;
