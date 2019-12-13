@@ -691,7 +691,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h6 {
-    margin-top: 10px;
+    /* margin-top: 10px; */
+    color: #fff;
 }
 
 h1 {
@@ -1169,6 +1170,10 @@ form label.error {
     padding-bottom: 110px;
 }
 
+.pb-30 {
+    padding-bottom: 30px;
+}
+
 .ptb-15 {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -1180,6 +1185,11 @@ form label.error {
 
 .pb-15 {
     padding-bottom: 15px;
+}
+
+.ptb-20 {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .ptb-60 {
@@ -2901,7 +2911,7 @@ form label.error {
 
 .contact-icon-left, .contact-icon-top {
     font-size: 30px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .contact-icon-top {
@@ -2910,6 +2920,20 @@ form label.error {
 
 .contact-icon-left {
     left: 0;
+    color: #fff;
+}
+
+.contact-icon-left ~ p, .contact-icon-left span {
+    color: #fff;
+    font-size: 13px;
+}
+
+.row-contact {
+    min-height: 460px;
+}
+
+.row-contact a {
+    color: #fff;
 }
 
 
@@ -3488,11 +3512,12 @@ form label.error {
 
 .map {
     width: 100%;
-    height: 450px;
+    height: 100%;
 }
 
 #map {
     height: 100%;
+    width: 100%;
 }
 
 
@@ -5153,6 +5178,11 @@ h1, h1.h1{
 #contact-info{
     position: relative;
     height: 100%;
+
+}
+
+#contact-info .container{
+    min-height: 100%;
 
 }
 
