@@ -706,14 +706,14 @@ h1 {
     }
 
     .title-1st-word {
-        color: #D3D3D3;
+        color: #ffff;
 
 
     }
 
     .title-1st-word span{
-        background-color: #2D4072;
-        border: 1px solid #2D4072;
+        background-color: #3898D1;
+        border: 1px solid #3898D1;
         border-radius: 5px;
         padding-left: 10px;
         padding-right: 10px;
